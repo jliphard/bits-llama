@@ -12,7 +12,7 @@ else :
 	quit()
 
 query_engine = index.as_query_engine()
-response = query_engine.query("What's the best way to synthsize DNA?")
+response = query_engine.query("What's the best way to synthesize DNA?")
 print(response)
 
 query_engine = index.as_query_engine()

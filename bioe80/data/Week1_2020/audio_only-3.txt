@@ -2,55 +2,19 @@ WEEK 1 FRIDAY LECTURE 3
 
 Hey, everyone. Welcome to the first Friday class. So for the warm-up today, we're going to have everyone rename themselves to your favorite COVID quarantine pastime that you've discovered, like baking, crafting, reading, TV shows, like really whatever you guys have found you like the most, just hover over your own image. There's a dot, dot, dot button. You can click on that and then scroll down to rename. And you guys can just go ahead and start renaming yourselves. And we can take a look at what everyone else likes doing right now. Cool, so I see YouTube videos, baking bread watching Harry Potter Animal Crossing
 
-Animal Crossing!
-
-TikTok
-
-Reading Learning French Running Playing with your siblings Audiobooks Cooking Drawing, music, sleeping, poker, crafting, running, Netflix, watching my dog, lots of sleeping, that's good. Baking cookies, what else do we have? Crocheting, I guess with that we can get started with the main lecture. Drew, if you. Thanks. Thanks so much, Naomi. Welcome, everybody. So let's get right into it.
-
-I will, I think I'll hit mute all just to filter the music a little bit. Nothing against the music, so hang tight. And there we go.
-
-So Naomi, can you still hear me okay?
-
-Yeah, great. And I'm gonna share screen real quick and off we go. And hopefully you can see this. Just want to give a distracting shout out to our Welcome Back to Reality colleague. If you can see this website here, this is the front page of the New Yorker magazine and Michael, our colleague on the teaching team, has a front page story on Tony Fauci. So if you're interested in Dr. Fauci, you can spend some time this weekend taking a look at that article. Now, back to today. So, the main goal for today is to, if you've never done this before, give you a turbocharged toolkit for parsing primary research papers in the bioengineering literature. If you are already really good at this, nevertheless, I'll submit for consideration, we can help you level up. And so, the activity today is to go through the process, the algorithm of reading a bioengineering research paper. And I need to be very particular about it. The goal is not to perfectly understand these papers or get distracted by the content of these papers. These papers are substrates to practice the algorithm. So we're really aiming to enable you to get skills for parsing papers. Some of the papers we've chosen on purpose to be distracting and some of them I've chosen to be boring, so it'll be harder, easier. Now, what's going to happen is I will just remind you from the pre-class, then we'll get into one of the papers that you looked at, hopefully, and then I'll do practice through four other papers or three other papers, and then we'll go into activities that other folks on the team will lead. So here's the algorithm, just as a very brief reprise. When you're going to read a paper, the first thing you should do is not read the paper. It is a tragic blunder of the first order to read a research paper by reading the paper, because if you do that, you will spend so much time reading the paper, you just run out of time. Instead, here's the suggestion. Read the title, see if it makes sense. Any word you don't understand, pay attention, but don't worry about it. Second, read the abstract. You're not reading the abstract to read the abstract. You're reading the abstract to hunt down and capture the most important or remarkable statement, declarative claim, that is being presented by the writers, the authors. If you cannot find a compelling claim in the abstract, you should throw the paper out or recycle it gently. Just don't spend more time on it. If the authors fail to write their abstract in a way that makes it obvious why the thing matters,
-
-set it aside.
+If you can see this website here, this is the front page of the New Yorker magazine and Michael, our colleague on the teaching team, has a front page story on Tony Fauci. So if you're interested in Dr. Fauci, you can spend some time this weekend taking a look at that article. Now, back to today. So, the main goal for today is to, if you've never done this before, give you a turbocharged toolkit for parsing primary research papers in the bioengineering literature. If you are already really good at this, nevertheless, I'll submit for consideration, we can help you level up. And so, the activity today is to go through the process, the algorithm of reading a bioengineering research paper. And I need to be very particular about it. The goal is not to perfectly understand these papers or get distracted by the content of these papers. These papers are substrates to practice the algorithm. So we're really aiming to enable you to get skills for parsing papers. Some of the papers we've chosen on purpose to be distracting and some of them I've chosen to be boring, so it'll be harder, easier. Now, what's going to happen is I will just remind you from the pre-class, then we'll get into one of the papers that you looked at, hopefully, and then I'll do practice through four other papers or three other papers, and then we'll go into activities that other folks on the team will lead. So here's the algorithm, just as a very brief reprise. When you're going to read a paper, the first thing you should do is not read the paper. It is a tragic blunder of the first order to read a research paper by reading the paper, because if you do that, you will spend so much time reading the paper, you just run out of time. Instead, here's the suggestion. Read the title, see if it makes sense. Any word you don't understand, pay attention, but don't worry about it. Second, read the abstract. You're not reading the abstract to read the abstract. You're reading the abstract to hunt down and capture the most important or remarkable statement, declarative claim, that is being presented by the writers, the authors. If you cannot find a compelling claim in the abstract, you should throw the paper out or recycle it gently. Just don't spend more time on it. If the authors fail to write their abstract in a way that makes it obvious why the thing matters, set it aside.
 
 So you're going to have to make this real critical go-no-go right away. If you come up with a claim, then don't read the paper still. Skim the figures and look for the most compelling evidence where you think you could see evidence of that claim. And if you can't find evidence of the claim, set the paper aside. Find a different paper to read. There are plenty of papers to read. So that's what we gave you in pre-class. And what I'd like to do is jump into one of the two papers from the pre-class and see if we can apply this algorithm together. Now, again, I'm just gonna give you the demonstration of this with four papers real quick, and then we'll transition into activities with papers you haven't seen. And obviously three of the four you haven't seen, but this one you should have seen. So can everybody see the top of this paper starts with identification of an infectious something or other? Naomi, can you see that?
 
-Looks okay on the screen?
+Read the title and see if you can make any sense of the title. Identification of an infectious progenitor for the multiple copy HERV-VK human endogenous retro elements. The only word I understand there is identification and infectious. And the rest of the words I can kind of understand like progenitor like the thing that comes before Multi multi copy okay, but like herve K. What? So identify so I'm just going to abstract this title identification of something All right, all right, so okay Now I also when I look at papers. I'm kind of thinking it like buying a bottle of wine I'm looking at the label for all sorts of information So like who are the authors and where do they work? And you can see that right here. So there's a lot more information you can sort of parse on the side without too much effort. And that'll help you set expectations. So now I'm gonna look at the abstract, that's the text here, okay? Human endogenous retroviruses, these things, are remnants of ancient infections in primates long ago. Here we're using something in silico. That means computer. Here we're deriving in a computer the sequence of a putative, we expect ancestor of one of these things. This element, which they're calling Phoenix, produces virus particles and looks like a bonafide retrovirus that can infect human cells. We show this element amplifies and so on and so forth. We show that recombination, I'm now at the last sentence, and note I'm not like actually reading it word for word, I'm jumping around a little bit. We show that in vitro recombination among humans could generate this thing. All right, so there's a lot in here. It's like 80% jargon. What am I taking away? Apparently, there were viruses that infected ancestors of humans a long, long time ago. Some of these things get into the genome of the ancestor and gets transmitted. That's what they mean by Mendelian fashion. Apparently, they found one of these things. They called it Phoenix, like the bird, if you saw Harry Potter, the phoenix that, you know, regrows after it burns. They found one of these things, they named it Phoenix, and they found out that it's a bonafide retrovirus. And then they say, and yeah, it's, okay. So basically at this point, I'm confused. But I see this claim, they're claiming there's this thing called Phoenix that's a bona fide retrovirus. So, that seems pretty interesting. And if I stitch that together, that's right in the middle, highlighted, if I stitch that together with remnants of ancient infections of primates, I can kind of make a guess at what this paper is about. There are genetic remnants of infections of our ancestors going way, way back in time, and if you stitch them back together in the right way, you can get a retrovirus reactivated. So, if I take a leap based on what I'm reading here, in the human genome, in your genomes, in my genome, in our genomes, there are these genetic fossils of old infections, and if you recombine them in the right way, you can resurrect the ancient virus from millions of years ago. And they claim to have done it with this thing called Phoenix. All right. So this is feeling like there's a claim. So I'm going to decide to continue with this paper. And so the next thing, if you go back to the algorithm, is find the evidence. And I'm not reading the paper. I'm just scrolling and I'm looking at the figure. And this is a cartoon, so there's no evidence here. Keep going. And, oh, this is a microscope image of what looks to be virus particles. And when I read the beginning of the, when I read the beginning of the figure title, microscope of virus particles generated by Phoenix. And it looks like, yes, indeed, there's virus particles here. Okay, so now I would make another decision. If I care about this topic, ancient infections leading to genetic fossils that could be recovered to remake viruses, then I'd say, well, let's spend more time on this paper. If I don't care about that, I'd say this is a good paper, but it's not that important for me. Hey, can I jump in for 30 seconds?
 
-Okay, great, thank you. So what's the first thing?
+Go for it. I wrote a long story for the New Yorker on this paper based only on the word Phoenix. Because I didn't understand any of the other words at the time, and I went to my editors and said, this guy has a Phoenix virus. It's a virus that comes back to life. And based on that, my editors, possibly not intelligently, sent me all over the world to look for pieces of virus. So you can focus on, and it turned out, maybe through luck, that that worked. You can look at a small part of a piece and get a sense of whether you want to keep studying.
 
-Read the title and see if you can make
+I am going to take that question with the second paper. So this is a paper that I selected because it's boring, relatively speaking. So let's go through it Gemini a bifunctional reporter of gene expression something That is a reporter of gene expression and then and then the abstracts already organized So I'm just going to write to the findings here we described Making this thing Gemini. That's a fusion of other things We show that it has functional activity and functional activity. It has two activities. So maybe that's why they called it Gemini. Okay, so at this point, there's a type of claim. There's a secondary claim, I won't belabor, and so I'd keep going. Now, playing with siblings, your question. We see down here some additional information on the wine label. This is what you were asking about. What this says here is this paper was received for peer review at the Journal on the 4th of September in 2009. And about a month later, on the 5th of October, the same year, it was accepted for publication. And then it was published about a month later. So from when the authors submitted the manuscript for scientific peer review, to when it was published was two months. One month was spent reviewing the paper and making an editorial decision. And the next month was just production to get it typeset for publication. So this is about as fast as you would see something happen unless it's totally extraordinary. And what this implies is that the paper was not difficult for the reviewers to review. The reviewers did not ask for more experiments to support the claims, right? Because you can, you can get a sense of what's involved. The paper has to get there. The editor has to look at it. They have to decide to send it to somebody, they have to get people to agree to review it, and so on and so forth. So that just takes days and weeks. Great question, audiobooks. Hang on to your question. Audiobooks got a question in the chat about what about COVID-19 research? What about peer review in the time of pandemic? Be patient. We'll get to that. So I've published other papers that have been a year or two years between when we sent it in and when it got accepted. And that's because we did massive amounts of additional experiments. So this is about as fast as it would go. If it's shorter than this, something funny is happening, like the peer review process being short-circuited or accelerated due to extraordinary circumstances. So you might be a little bit more skeptical if you see something shorter than this, or at least I would. Okay, I don't want to get too distracted because I just want to come back to the algorithm. So we found a claim that – sorry, playing with siblings. Does that make sense?
 
-any sense of the title. Identification of an infectious progenitor for the multiple copy HERV-VK human endogenous retro elements. The only word I understand there is identification and infectious. And the rest of the words I can kind of understand like progenitor like the thing that comes before Multi multi copy okay, but like herve K. What? So identify so I'm just going to abstract this title identification of something All right, all right, so okay Now I also when I look at papers. I'm kind of thinking it like buying a bottle of wine I'm looking at the label for all sorts of information So like who are the authors and where do they work? And you can see that right here. So there's a lot more information you can sort of parse on the side without too much effort. And that'll help you set expectations. So now I'm gonna look at the abstract, that's the text here, okay? Human endogenous retroviruses, these things, are remnants of ancient infections in primates long ago. Here we're using something in silico. That means computer. Here we're deriving in a computer the sequence of a putative, we expect ancestor of one of these things. This element, which they're calling Phoenix, produces virus particles and looks like a bonafide retrovirus that can infect human cells. We show this element amplifies and so on and so forth. We show that recombination, I'm now at the last sentence, and note I'm not like actually reading it word for word, I'm jumping around a little bit. We show that in vitro recombination among humans could generate this thing. All right, so there's a lot in here. It's like 80% jargon. What am I taking away? Apparently, there were viruses that infected ancestors of humans a long, long time ago. Some of these things get into the genome of the ancestor and gets transmitted. That's what they mean by Mendelian fashion. Apparently, they found one of these things. They called it Phoenix, like the bird, if you saw Harry Potter, the phoenix that, you know, regrows after it burns. They found one of these things, they named it Phoenix, and they found out that it's a bonafide retrovirus. And then they say, and yeah, it's, okay. So basically at this point, I'm confused. But I see this claim, they're claiming there's this thing called Phoenix that's a bona fide retrovirus. So, that seems pretty interesting. And if I stitch that together, that's right in the middle, highlighted, if I stitch that together with remnants of ancient infections of primates, I can kind of make a guess at what this paper is about. There are genetic remnants of infections of our ancestors going way, way back in time, and if you stitch them back together in the right way, you can get a retrovirus reactivated. So, if I take a leap based on what I'm reading here, in the human genome, in your genomes, in my genome, in our genomes, there are these genetic fossils of old infections, and if you recombine them in the right way, you can resurrect the ancient virus from millions of years ago. And they claim to have done it with this thing called Phoenix. All right. So this is feeling like there's a claim. So I'm going to decide to continue with this paper. And so the next thing, if you go back to the algorithm, is find the evidence. And I'm not reading the paper. I'm just scrolling and I'm looking at the figure. And this is a cartoon, so there's no evidence here. Keep going. And, oh, this is a microscope image of what looks to be virus particles. And when I read the beginning of the, when I read the beginning of the figure title, microscope of virus particles generated by Phoenix. And it looks like, yes, indeed, there's virus particles here. Okay, so now I would make another decision. If I care about this topic, ancient infections leading to genetic fossils that could be recovered to remake viruses, then I'd say, well, let's spend more time on this paper. If I don't care about that, I'd say this is a good paper, but it's not that important for me. Hey, can I jump in for 30 seconds?
-
-Go for it. I wrote a long story for the New Yorker on this paper based only on the word Phoenix. Because I didn't understand any of the other words at the time, and I went to my editors and said, this guy has a Phoenix virus. It's a virus that comes back to life. And based on that, my editors, possibly not intelligently, sent me all over the world to look for pieces of virus. So you can focus on, and it turned out, maybe through luck, that that worked. You can look at a small part of a piece and get a
-
-sense of whether you want to keep studying.
-
-Yeah.
-
-Let's do another example. Okay, so I'm going to go. Yep. Go ahead. Ask a question on so on like the wine label sort of way to look at it. So how long did the paper take to review and how long after passing review did it take to publish? What are kind of like short time for the paper to be reviewed?
-
-Is that good?
-
-Or like long time?
-
-Or how do we evaluate those?
-
-OK, great question, Playing with Siblings. Thank you for your question. I am going to take that question with the second paper. So this is a paper that I selected because it's boring, relatively speaking. So let's go through it Gemini a bifunctional reporter of gene expression something That is a reporter of gene expression and then and then the abstracts already organized So I'm just going to write to the findings here we described Making this thing Gemini. That's a fusion of other things We show that it has functional activity and functional activity. It has two activities. So maybe that's why they called it Gemini. Okay, so at this point, there's a type of claim. There's a secondary claim, I won't belabor, and so I'd keep going. Now, playing with siblings, your question. We see down here some additional information on the wine label. This is what you were asking about. What this says here is this paper was received for peer review at the Journal on the 4th of September in 2009. And about a month later, on the 5th of October, the same year, it was accepted for publication. And then it was published about a month later. So from when the authors submitted the manuscript for scientific peer review, to when it was published was two months. One month was spent reviewing the paper and making an editorial decision. And the next month was just production to get it typeset for publication. So this is about as fast as you would see something happen unless it's totally extraordinary. And what this implies is that the paper was not difficult for the reviewers to review. The reviewers did not ask for more experiments to support the claims, right? Because you can, you can get a sense of what's involved. The paper has to get there. The editor has to look at it. They have to decide to send it to somebody, they have to get people to agree to review it, and so on and so forth. So that just takes days and weeks. Great question, audiobooks. Hang on to your question. Audiobooks got a question in the chat about what about COVID-19 research? What about peer review in the time of pandemic? Be patient. We'll get to that. So I've published other papers that have been a year or two years between when we sent it in and when it got accepted. And that's because we did massive amounts of additional experiments. So this is about as fast as it would go. If it's shorter than this, something funny is happening, like the peer review process being short-circuited or accelerated due to extraordinary circumstances. So you might be a little bit more skeptical if you see something shorter than this, or at least I would. Okay, I don't want to get too distracted because I just want to come back to the algorithm. So we found a claim that – sorry, playing with siblings. Does that make sense?
-
-Yeah, I guess. So if there was a longer review time, is there something that you can do to follow up or specific things you would want to look for in the paper to kind of understand where that longer time came in,
-
-or is that kind of like not transparent to you?
+Yeah, I guess. So if there was a longer review time, is there something that you can do to follow up or specific things you would want to look for in the paper to kind of understand where that longer time came in, or is that kind of like not transparent to you?
 
 So what it, mostly what it signals is if it's shorter than two months, I would say there's some funny business going on. And so I might be a little bit more critical or skeptical, just I might have my feelers out a little bit more. If it takes say four months or longer, three months or four months or longer, I would expect there might've been a significant revision, maybe more experiments. And so I I might just have a mental model that the authors went through a revising process of some significance. And so I try and see how that played out if I really went deep into the paper. So that's that's all I would take from the from the latency of the publication process. I wouldn't I wouldn't think less of a paper that took a long time to get published. Usually the opposite. Right. I think more of it's a survivor. It's really been well-baked, so to speak.
-
-I'll add something very brief. Some of the journals now also publish the correspondence between the writers and the reviewers, so you can actually see the process.
-
-All right, that's a good point, Sivash.
 
 So, there's a claim that there's this two-component protein. So I'm just gonna go into the figures. Can I find it? Okay, design, okay, that's a cartoon. Gemini encodes both functional, enzymatic, and fluorescent activity. Probably here, I'd start. All right, so it looks like there's evidence. It's clearly presented. The figure title is a declarative statement making a claim, supporting the claim in the abstract, so okay. Let's go to another paper. And this is going to come right to the question that audio books has posted in chat. How has this changed for covid related research? So check out this paper. This paper has the title Rapid Reconstruction of SARS CoV-2 using a synthetic genomics platform. So rapid reconstruction, okay, SARS-CoV-2, okay, that's all over the news, using a synthetic genomics platform. Kind of jargony, but I guess that means they're gonna synthesize a genome. And if I put it together, they're gonna synthesize the genome of the coronavirus, COVID-19. Now, this is a paper that's related to COVID, like audiobooks question, but it's not a peer-reviewed paper yet. This is something called a pre-print. It's pre-peer review. It's published free online through a pre-print server, in this case called BioRxiv. So one way to accelerate publication is to skip peer review for the moment and just publish your pre-print and then let peer review happen later so everybody can read the pre-peer review version of the paper. Does that make sense? Enough sense. Okay, so I wanted to just hit you with a preprint Let's see if we can get to an abstract so it's not it's not nicely typeset right Reverse genetics blah blah blah large thing da da da. Yeah here we show yeast based synthetic genomics to reconstruct Viruses and viruses and blah, blah, blah. Based on our platform, we were able to engineer and resurrect the recent epidemic after a week of receiving the DNA. Okay, so basically it sounds to me like they made the claim of they're downloading the sequence of this virus off the internet, they're synthesizing the genome from scratch, they're assembling it and recovering the virus. So that's kind of amazing, which is an understatement. and recovering the virus. So that's kind of amazing, which is an understatement. It means if you have an internet terminal and a DNA synthesizer, you can build viruses. Okay, so look, there's no figures until you have to go all the way to the thing, to the end. Oh my gosh, oh geez. Okay, where are the figures? Do they even have figures? Ah, here we are. It's trickier to figure out because the figure legends are not next to the figures. I have to go back up to look at them. But it looks to me like they've got plates of human cells or mammalian cells, and they're doing an assay to see if the virus is destroying the cells. And everything that came before looks like it's DNA construction. Yeah, and here's the timeline. So this is really interesting actually. There's an infection in Wuhan in December. Somebody got a clinical sample of the virus and the genome got sequenced by DNA sequencing. That genome was published on the internet on the 10th of January. Four days later, a group in Germany, not in China, a group in Germany downloads that sequence and redesigns 14 variants of the COVID genome for synthesis. It took them about three weeks to get the DNA synthesized from 14th January to 4th Feb. And within a week, they had rescued, meaning gotten infectious virus in their laboratory in Germany. So all via the internet and DNA synthesis. Okay, so now we're distracting you again with the content of a paper, but don't forget the algorithm Can you understand the title? Can you find a claim in the abstract? Can you find evidence in a figure supporting the claim if at any point you answer no? Then you should stop on the paper All right. I'll do one more and then we'll turn it over. So a A DNA of things storage architecture to create materials with embedded memory.
 
@@ -72,267 +36,41 @@ So take it away, Brianna.
 
 All right, let me just post this link in the chat.
 
-Okay, so everyone can access this paper. We're going to... Oh, and Drew, do you think you can bring up the slides of that algorithm? And we can go into break-up room. Wait, we're going to spend five minutes, I think, reading the paper, and then we're going through the algorithm, explicitly not reading the paper, and then five minutes in our breakout groups kind of discussing each step of the algorithm and what claims we found. So yeah, go ahead and click on the link. I like this paper because, disclaimer, there's some really big, scary words in it but I think there's enough not scary words for everyone to be able
-
-to find the claims. So just baking copious I just want to double check for me in the chat I am not able to click that link are others able to click it?
-
-Yes. No, so a student says they can't. I can right-click and then open URL maybe we can post it as a...
-
-Yeah. I'll also post the title.
-
-Oh, I see. Right click. Right click.
-
-And then open URL.
-
-So...
-
-Yeah. And then it's a PDF download, apparently.
-
-It's not a...
-
-Yeah.
-
-Yeah. Okay.
-
-So our task in the breakout is to, as a group, find the claim and then find the evidence. So when we come back, we can discuss how did it go? Essentially, it's not to figure out the paper per se.
-
-Can you repost the link in the chat, please, as well? Maybe if everyone has access to the paper, click the yes button in the chat
-
-window, and if you don't have access, click the no button. I also put the title of the paper, My Internet Never Works. Speed
-
-Yoga. How are you doing Speed Yoga? Okay, can you remind us what the paper parsing algorithm is just while we're getting set here?
-
-I had a call from my speed yoga employer. Yes, algorithm. Okay, we'll let you take your call.
-
-How about playing catch? Can you can you run us through the algorithm?
-
-Playing catch, go ahead. Oh me? Yeah. Yeah.
-
-Just in general, remind us all what the paper parsing algorithm is.
-
-Okay, so
-
-first read the title. And then check if it makes sense and then read the abstract and then try to make like one main important claim that it's trying to say. And then if you can't find a claim, then just don't read it. Then skim the figures and then try to find evidence for the claim in the figures.
-
-Okay, great. Parse the title, hunt the abstract for a claim.
-
-If you can find a claim,
-
-try and find evidence supporting the claim in the figures. That's it. And if at any point, no, stop.
-
-Thank you very much.
-
-All right, so should we go to breakouts, Victor? Sounds good.
-
-Okay, so we're gonna spread into breakout rooms, again, of five to six people each, and just spend some time reading, or like, yeah, parsing through the paper using the algorithm we talked about. And then whoever has a past time that starts first in the alphabet can go first and share their main primary claim they identified, and also lead the group through the figure
-
-that they found best justified that claim.
-
-Cool. What do you want the groups to come back with?
-
-Oh, so everyone should come back with, yeah, the main claim and you guys can disagree or agree based on that, but maybe form one main claim that we can discuss and share with the rest of us.
-
-And then also the figure that best backs up that claim.
-
-Great, thank you.
-
-Hey guys.
-
-What's up Animal Crossing?
-
-I have to admit, I don't even know what Animal Crossing is. So, it's just like a little game on a Nintendo Switch.
-
-Yeah. Cool.
-
-So, we've got drama and crafting. Can you hear us?
-
-Yeah, I can hear you.
-
-Great. Yeah, I can hear you guys too.
-
-Great.
-
-I think the instructions were to start
-
-beginning of alphabet, so animal crossing.
-
-You're driving the bus. What should we do? Oh, gosh.
+Okay, so everyone can access this paper. We're going to... Oh, and Drew, do you think you can bring up the slides of that algorithm? And we can go into break-up room. Wait, we're going to spend five minutes, I think, reading the paper, and then we're going through the algorithm, explicitly not reading the paper, and then five minutes in our breakout groups kind of discussing each step of the algorithm and what claims we found. So yeah, go ahead and click on the link. I like this paper because, disclaimer, there's some really big, scary words in it but I think there's enough not scary words for everyone to be able to find the claims. 
 
 Go for a main claim, I know they're talking about COVID-19 and how it's, I guess, maybe being talking about like the, not transition is not the right word, but, oh yeah, maybe like with increased transition mutation frequency, and like RNA or something like that. But yeah, that's what I got from the abstract. I don't know if anybody else wants to chime in here.
 
-I've not read the abstract yet, so I'm going to go read the abstract, and I'll be back. Don't pay any attention to me.
-
-I'm still on the title.
-
-Okay. So the title I think says they've got a medicine that inhibits the virus in the airway.
-
-In mice and culture, but okay, strange, okay.
-
-Can anyone infer what orally bioavailable might mean?
-
-Like a medicine?
-
-Just that it can be consumed orally?
-
-Is that all that means?
-
-That's what I'm thinking as well.
-
 Yeah, if you swallow it and it goes into your digestive system, the active pharmaceutical ingredient will end up circulating throughout the body and be available to have a biological effect. So you can take it by mouth. You can take the medicine by mouth as opposed to an injection. One of the things when I was looking at the abstract, I'm wondering, crafting what you think. Whenever I see words like here or we show, so the second sentence of the abstract is, it has all those words, like herein we show, that's always been for me a great clue that they're about to claim something. What do you think that sentence is claiming, if you had to simplify it and delete all jargon with just words a seven-year-old could parse.
 
-I'm sorry, go ahead.
-
-They're basically showing that this compound that they're using works against a number of different coronavirus family. So they're planning on showing that their antiviral works and not only that it works, but it also works against like a variety of different coronaviruses. I also saw like the broad spectrum of antiviral activity meaning that like it can affect or it can inhibit the spread of the virus in numerous ways and so like for example it says at least afterwards it says it improves pulmonary function, virus titer, and I'm not really sure why they include body weight loss
-
-and how that's supposed to help, but I don't know.
+They're basically showing that this compound that they're using works against a number of different coronavirus family. So they're planning on showing that their antiviral works and not only that it works, but it also works against like a variety of different coronaviruses. I also saw like the broad spectrum of antiviral activity meaning that like it can affect or it can inhibit the spread of the virus in numerous ways and so like for example it says at least afterwards it says it improves pulmonary function, virus titer, and I'm not really sure why they include body weight loss and how that's supposed to help, but I don't know.
 
 So if I had to, again, I'm not seeing this, I had to explain it to my seven-year-old,
 
-I'd say these folks found a medicine for helping people who are sick with COVID-19, with the coronavirus. They know what coronavirus is.
-
-How did they peer review this thing so fast?
-
-Oh, no kidding.
-
-So Ralph is the senior offer.
-
-Ralph Baric in North Carolina.
-
-I know him from 20 some years ago.
-
-But what else do we need to do, Animal Crossing? So it sounds like we found a claim, so what would the next thing be? We have to look at the evidence that supports the claim. Okay, and where do we look? In pictures. Pictures, yeah. If we can find that, then I'll tell you stories about Ralph. I had no idea he was an author on this paper.
-
-Wait, there are no...
-
-Oh, just kidding.
-
-There are graphs at the bottom.
-
-I'm goofy. Yeah, it's like things have published fast, right?
-
-It hasn't been typeset. Yeah. Oh, God. What is this? So the medicine is abbreviated NHC, if I go back to the abstract, so that's a helpful
-
-clue.
+I'd say these folks found a medicine for helping people who are sick with COVID-19, with the coronavirus. They know what coronavirus is. It hasn't been typeset. Yeah. Oh, God. What is this? So the medicine is abbreviated NHC, if I go back to the abstract, so that's a helpful clue.
 
 So figure one's got a bunch of NHC, maybe it inhibits replication. And so it's got a bunch of plots that have the medicine concentration on the X axis and then different effects on the Y axis, like percent of inhibition, virus titers going, like the plot C, that red line, titer reduction goes down as medicine concentration goes up.
 
 All right.
 
-Then figure two, NHC is highly active against SARS-CoV and so on and so forth in primary human epithelial cell cultures.
-
-Figure three, resistance to the medicine, that's a secondary figure. Figure four, effective against.
-
-Often also when looking at these figures, it's nice to form a sentence of if blank goes
-
-up, or if X goes up, then Y goes up or down. Just like put it in really clear logic. So, does anyone want to try that with one of figure one's graphs?
-
-As the amount of NHC increases, we see a decrease in both the number of COVID-2 cells and then also the titer reduction ones and the genome. We just see a genome reduction in those cells as well as the concentration or the amount of AHC increases.
-
-That's a great approach. I never thought of that before.
-
-That's super.
-
-Looks like increasing.
-
-Say that again. So like, I'm looking at like the six graphs. I think it's K-John that explained the two that are decreasing, but like, what's the
-
-significance of the other four that are increasing?
+Then figure two, NHC is highly active against SARS-CoV and so on and so forth in primary human epithelial cell cultures. Figure three, resistance to the medicine, that's a secondary figure. Figure four, effective against. Often also when looking at these figures, it's nice to form a sentence of if blank goes up, or if X goes up, then Y goes up or down. Just like put it in really clear logic. So, does anyone want to try that with one of figure one's graphs? As the amount of NHC increases, we see a decrease in both the number of COVID-2 cells and then also the titer reduction ones and the genome. We just see a genome reduction in those cells as well as the concentration or the amount of AHC increases.
 
 Yeah, so that's a good pattern. You notice some things are going down and some things are going up. Also the things that are going up all follow this weird S pattern, which maybe if you read the paper more thoroughly, you could analyze more. But yeah, does someone want to tell us what's going up? You can see in C and D, the left sides are going down as, I don't remember who responded, drama or crafting.
 
 So what's...
 
-So I see percent inhibition. Does someone wanna take a stab at what that means? So it's like looking,
-
-I don't know what method they're using to measure it, but it would be whatever like the activity of the virus is. So, it's measuring like a decrease in activity.
+So I see percent inhibition. Does someone wanna take a stab at what that means? So it's like looking. I don't know what method they're using to measure it, but it would be whatever like the activity of the virus is. So, it's measuring like a decrease in activity.
 
 Yeah, if you go to figure this out sometimes, like sometimes you can figure it out just right from the figure label, the Y-axis label. Like 1C says SARS-CoV-2 tighter, it's like the amount of the virus. But if you look at 1A, the y-axis says percent inhibition. And so it begs the question, inhibition of what? And to answer that, they did a good job. The easiest way is to go down to the legend right below. Can somebody read out just the words in the figure legend, both the first sentence and then the words right after the bold letter A.
 
-Oh, percent inhibition of MERS-CoV and TauU3 cells. Inhibition of what? MERS-CoV what?
-
-There's a word after there, right? Percent inhibition of MERS-CoV replication. Do you see that?
-
-I don't see that.
-
-Are we?
-
-I also am not, I don't have the PDF. I ended up just having to like Google this.
-
 Oh, sorry, yeah. So I'm looking at figure one and it says, oh yeah, so right, you're right. So the bold part of the figure says inhibits MERS-CoV. That doesn't tell you what does it mean by inhibit go to the next sentence where it says percent inhibition of do you see that? Of Maris Kobe replication and managed to say to talk to city, right? So great perfect So so now when you go back up to the figure you see there's a y-axis on the left. That's percent inhibition That's inhibition of replication of the virus. So as medicine concentration goes up Inhibition of replication goes up. What about the right Y axis? It says percent toxicity. Can somebody turn that into a sentence? As medicine concentration goes up, what's the impact on toxicity? Presumably to the cells that are getting the medicine. The medicine's supposed to help the cells. So would you want the medicine to be toxic or not? You wouldn't, and so that's why you want to see it be flat which is good in A. Yeah. Perfect, absolutely. Okay, Animal Crossing, you're gonna have to bring us back home with our report out. Oh, shit.
 
-Welcome back. So we gave you around like 15 minutes in total to parse through that paper this time. So for the next paper, we're going to shorten that time a little and only give 10 minutes for discussion. But so now, Brianna is going to help lead us
-
-in a discussion of this paper.
-
-OK, awesome.
-
-So let's see.
-
-What were some, so in our algorithm, we start with the title, trying to parse some claims. Parse what their claims will be based on the title. Did anyone have a guess that ended up being really accurate? And did anyone have a guess of what the claim would be
-
-that ended up being really not accurate? Because sometimes paper titles are really terrible
-
-and might really fool you into thinking they're going to do something else.
-
-So in the group that I was part of, actually we had an easy time navigating this paper,
-
-and please everyone try to add your answers to the group chat. TikTok, do you want to say like how did we find the the claim? Yeah so just parsing through the title it sounded like they had made some sort of treatment for like strains of like coronavirus and that they tested in some human cell lines and So that's where we started with the title. Thank you. Anyone else wants to add about like,
-
-where did they find evidence for the claim? I guess, oh, sorry.
-
-No, you talk. I guess one thing that we were looking at that we weren't sure about originally was how they proved the oral bioavailability, but I think that seemed to be just known about the nucleoside analog that it was available orally and that they didn't actually prove
-
-that.
-
-So we found that in the end of the introduction.
-
-Right, that's a very good point. And one takeaway I wish for all of us to always keep in mind is that papers, not necessarily this paper, sometimes a bit over claimed. So, trying to find and tease out, did they actually show that or do they think that they show that is an important aspect. Brianna, is there anything else we should highlight?
-
-Did anyone have a favorite figure that they felt most exemplified the claim? Maybe groups
-
-can chime in in the breakout rooms if we are not sorry in the chat if we all agree.
-
-Also, if you guys had any challenges in like understanding the jargon or any other parts of the experience of parsing that you want to share. I'll say for me personally, I found the title of the figures to be a lot easier to understand in the abstract.
-
-I got stuck on a lot of the big words in biochemistry in the abstract.
-
-Someone got all the way to page 19 and 20 with the figures.
-
-Good skimming. Very efficient. Right, right. So to move fast, should we do one more paper and maybe we can do it here
-
-together instead of breakout groups? So someone from the teaching team, please go ahead and post paper two. Jonathan, do you want to post that for us? Then we're going to take a look at this paper and read the title and abstract and see if you can find the claim. So, I'm going to give everyone like a couple of minutes, Three minutes to be exact, please like, read the title. Read the abstract and try to find evidence that supports that and we'll, we'll start talking about it.
-
-If you have trouble with the link in the chat, there's also it's also uploaded to Canvas.
-
-And John or Sivaj, just to double check, can you please confirm the title of the paper you want everybody to be able to take a look at?
-
-It is Biofilm Littography Enables High-Resolution Cell Patterning via Optogenetic Adhesin Expression. And this is one of those titles that, as Brianna was saying, the title is really jargon filled and confusing, but
-
-the rest of the paper is pretty straightforward.
-
-So one more minute.
+It is Biofilm Littography Enables High-Resolution Cell Patterning via Optogenetic Adhesin Expression. And this is one of those titles that, as Brianna was saying, the title is really jargon filled and confusing, but the rest of the paper is pretty straightforward.
 
 Fun fact, this work was done in the bioengineering department here, and it was done in the Clark center, which is right next to Shroom.
 
-Okay, so can I get a volunteer from anyone who thinks they have found the claim from the paper. And just please go ahead and speak. It's trying to say they can grow bacteria in specified, like, where they want them to
+Okay, so can I get a volunteer from anyone who thinks they have found the claim from the paper. And just please go ahead and speak. It's trying to say they can grow bacteria in specified, like, where they want them to grow using blue light. Right. And where did you find that in abstract? You're absolutely right. It's the third sentence. With this tool, you're able to use blue light to pattern E. coli biofilms.
 
-grow using blue light.
-
-Right. And where did you find that in abstract? You're absolutely right.
-
-It's the third sentence.
-
-With this tool, you're able to use blue light to pattern E. coli biofilms.
-
-Yeah.
-
-Right. So perfect. So they have genetically modified E. coli, and now they can express this, they can induce this gene and therefore they can pattern it to form biofilms. Great. So someone else wants, and they also claim that they can do this down to 25 micrometers. Someone else wants to tell us where did they find evidence for this claim or not. So we are happy.
-
-of trying to find evidence for that claim.
-
-Figure 1B.
-
-Thank you, Drew. That is from the chat, running in the chat, gets credit for that. Perfect.
+So they have genetically modified E. coli, and now they can express this, they can induce this gene and therefore they can pattern it to form biofilms. Great. So someone else wants, and they also claim that they can do this down to 25 micrometers. Someone else wants to tell us where did they find evidence for this claim or not.
 
 Thank you, running. And yes, so if I am looking at figure 1B, specifically the first one and comparing it with the other conditions, it looks like that E. coli MG1655, where it had light, where it didn't have, you can see those purple stains that the E. coli got stuck. And very briefly, just in the interest of time, if we go to figure two, actually used a projected light, like 2A, where they have put down bacteria that are formed by a film versus where they have put, like, you know, where there was dark or no light, and then bacteria did not get stuck or did not form by them. So where does the 25 micrometers. You can post in chat or you can speak up.
 
@@ -343,38 +81,4 @@ And it seems like we're getting some signal on figure 3C, which is correct.
 Perfect. So, painting, thank you for pointing out figure 3C. So the 25 micrometer comes from like the lower panel of figure 3C. And painting, are you convinced looking at 25 micrometer that that's a reliable number. Do you wish for something else? Are you happy with that claim? What are your thoughts? Or anyone else, if you would wish to help fake it. I mean, there seems to be a highlighted gray range. But also, yeah, so it just drops off pretty significantly, like around 25 meters. Right. So what when I looked at this, I've been meaning to read this paper for a very long time. When I read this, I really loved everything to be very transparent, except that claim of 25, because I looked at it and it to me seems one experiment with like not very like I'm not sure exactly how how they measure that. that I I personally wish for more experiments to back that twenty five micrometer claim a little bit more. The reason I'm highlighting this is because like. When we read papers, it's also good to from my point of view, it's good to be skeptical of thinking about their claims and seeing how they arrive at those, as Jonathan said, those quantitative numbers, how do they back that up? What are the parts of the paper that are more, you know, like more easily, you know, provable. Like, I believe them that they've engineered the collide that is, you know, conformed by a film with blue light. 25 micrometer resolution. I'm a bit iffy. I wish for a bit more evidence. And that's that this paper. So since we're almost out of time, we'll pass this back to Drew to give us conclusions and and we'll go forward.
 
 Thanks so much, and thanks, everybody, for sticking around a little bit beyond time. So again, we wanted to give you, first week into the class, a tool for your toolkit and to level up your tool if you've got it and how to parse papers. Motivation, again, is bioengineering is very diverse in application and tooling and research. It's on a frontier. So if you have this capacity in your toolkit, you'll be better enabled to explore and flourish as a bioengineer. Also as a citizen of a world that increasingly depends on biology and biotechnology and just knowledge in general, it's very good to have a upgrade in your abilities to understand what reality is as opposed to what the representations of reality is in the news. So with that, we'll hit pause for now. P-SET I is posted on the course website. It's due a week from today. And the pre-class for next week will go live shortly, later today. Next week, we're gonna talk about human health, planet health, and political health. And we're doing that early so that you can consider and diversify your interest and wishes for bioengineering between now and the year 2030, such that you begin to think about what you want to contribute to making true over the next decade, either right away or something bigger in ambition, and that'll feed into the final projects. So again, just as a reminder, PSET's live, pre-class for next week will go live.
-
-You want to look up-
-
-I have a couple of announcements as well.
-
-And then John has announcements. Very good.
-
-Thanks, John. Yes, please. Thank you. Thank you, Drew. Yes, PSET is posted online on the homepage of the BioE website, BioE 80 website. That's where we're going to have all the PSETs posted from here on out. Please sign up for Piazza if you haven't. We're going to use Piazza to manage communication with students and like open questions, frequently asked questions. And we just want this as a good bandwidth to be able to communicate with you all in a faster manner than just sending out emails or using Canvas. If you have not yet sent us your address, your quarantine shelter in place address, and do want to receive materials for doing our two lab activities, which is going to be folioscopes and dancing droplets, please send us that information. There will be a link posted to Canvas in the upcoming few hours, so please watch out for that. Once again, link on Canvas. If you've already sent your address, please don't add your address again on that link. Thank you very much.
-
-All right. Have a very nice weekend.
-
-Be well. Stay safe.
-
-Stay hydrated.
-
-Where did my water go?
-
-Yeah, where did it go?
-
-Can I ask a question about how we might evaluate the figures within a paper, sort of like breaking down or going forward? Sorry, you can only ask bad questions, I know different tests have, like, different. Obviously, you're like showing bigger and you might see a positive trend, but you aren't necessarily sure, like, what. You know, amount of, like, change might be relevant to this. This specific metric, like, is there a way that. We can sort of, yeah, investigate, like, what you would expect to see or what you can qualify as, like, good.
-
-Sure.
-
-So, do you want to go through a particular figure to talk about this? Like, maybe either the spatial patterning or the orally available drug? Like... Yeah, sure.
-
-Okay. Cool.
-
-So, let's possibly... If I submit for consideration figure one from the orally available drug...
-
-John, John, hang on a second. Could I suggest that we set up a breakout and you hop into that? I just wanna allow some other folks to get inbounds. Who's the host right now, Victor? Yeah, I can do that. So can you set that up? Yeah.
-
-And anybody who wants to work on that, head over there. And anybody who wants to work on that, head over there.
-
-Drew, you're still recording.
 
