@@ -36,11 +36,11 @@ python3 query.py
 
 Downloaded all of https://github.com/Stanford-BioE80/Stanford-BioE80.github.io
 
-Injested all `.md` and `.pdf` files
+Ingested all `.md` and `.pdf` files
 
 Loaded 781 docs
 
-Here are soem question/answer pairs:
+Here are some question/answer pairs:
 
 *What is the goal of BioE80?*
 The goal of BioE80 is to help students learn ways of thinking about engineering living matter, empower them to explore and do bioengineering starting from DNA, become more capable of learning and explaining bioengineering to themselves and others, and devise and express their wishes for bioengineering as might be made true by or before 2030, with the ultimate aim of benefiting all people and the planet.
@@ -65,7 +65,7 @@ One example of an impact of bioengineering today is the development of gene ther
 
 In the future, I wish to realize a world where bioengineering is used to improve the quality of life for all people. Bioengineering should be used to develop treatments and cures for diseases, create sustainable food sources, and develop renewable energy sources. Success would be defined as a world where everyone has access to the treatments and cures they need, where food is plentiful and sustainable, and where renewable energy sources are widely available. To realize this future, we need to focus on developing new technologies, such as gene editing, that can be used to create treatments and cures for diseases. We also need to focus on developing sustainable food sources and renewable energy sources. Finally, we need to create policies that ensure that everyone has access to the treatments and cures they need.
 
-## Conversation example - uneditied/raw output
+## Conversation example - unedited/raw output
 
 _What's the best way to synthesize DNA?_
 The best way to synthesize DNA is to plan the project goals, design the sequence, synthesize oligos, assemble oligos into linear fragments and larger constructs (if applicable), and verify the sequence of the gene fragment or cloned product. Additionally, it is recommended to consider factors like timelines for downstream assay work or collaborator availability, survey the literature to reveal known issues in the synthesis of the target sequence, analyze the coding DNA sequence (CDS) for critical elements, and use a codon optimization tool to improve the sequence for optimal synthesis and downstream performance. Lastly, it is recommended to consider using a service provider to reduce error, labor, and time required for synthesizing genes.
