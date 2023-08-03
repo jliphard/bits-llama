@@ -1,0 +1,213 @@
+WEEK 2 MONDAY LECTURE 4
+
+Is everyone in here? Hi, everyone. Okay, welcome back to Introduction to Bioengineering. Happy Monday. I hope you all had a restful and relaxing weekend. 
+
+Welcome everybody, hope you're well this Monday and or maybe Tuesday, depending on where you are. So we'll get right into it. I'm gonna start by sharing screen and push some slides for a little bit, then we'll have a chat-based discussion and two breakouts today. So let's get right into it.
+
+And, stretchy limbs, John, does that look okay to you? It does indeed. Thanks so much.
+
+Okay, day three. So just to give you sort of a template to keep track of things, looking back at last week, we answered questions relating to two concepts and one skill. Why engineer biology? Well, we've got a generation of biotech. It's a planetary scale, natural nanotech, and it's no longer looking to be constrained by photosynthesis. So just an amazing capacity to make stuff and do things. Other concept from last week, what makes living matter unique? We talked about the uniqueness of the physics of living matter. We talked about the uniqueness of the challenges and opportunities associated with bioengineering, biology. We talked about the uniqueness of our time, the surprise or not of a pandemic, the pace of change. The skill from last week, because bioengineering is a frontier discipline in engineering, was how to read a research paper, how to read the primary literature. And there's a little bit of a misnaming there. Actually didn't teach you how to read, we taught you how to triage at every step, hunt for the claim in the abstract, hunt for the evidence. So we will give you after action summaries like this for each week, it should match the syllabus. So we're going forward and backwards, but just want to give you a waypoint so you can remember where we're picking up from. And each week we'll have one or more concepts and a skill that we wish for you to put in your toolbox, so to speak.
+
+So here's week two. And we're putting this early in the quarter because of the concepts. We wish for you to, by the end of this week, be thinking about bioengineering being used for different purposes. For people, directly people health. For the planet, for the environment, for ecosystems, call that planet health. And then how it all connects together, culture, politics, society. What do bioengineers have to do with that? So this week we're going to introduce three concepts around people health, planet health, political health, and we'll focus on people health today. But hopefully we're all very excited and curious about your ability to find the connections between these three dimensions of bioengineering application. The tools for this week are the framing of puzzles and the discovery of connections. So we're going to name those tools, borrowing from the d.school, Framestorming, and Future Wheel. That's a little bit of a teaser looking ahead for the week. So I want to get right into it. Here's the front page of the national paper from France today, and looks like the confinement is being prolonged for about another month over in France. So that means all the shelter in place orders and so on, if I'm reading the newspaper correctly, are being extended in France for another month or so, and we'll see what happens due to COVID-19. So obviously we can, within the class, reflect this back immediately and say, well, what do bioengineers do in terms of people health? And here's the frontline website for the bioengineering department at Stanford. If you ever wish to know what bioengineers are doing, you could just go to the website and see what they say they're doing. So what I'd like to do is pop out of this deck and go into.
+
+This website live.
+
+John, is this still sharing?
+
+Can you unmute? Yes, it is. We have the bioengineering website in the middle of your screen on Maximized.
+
+Great.
+
+So, I'm just going to see what the bioengineers are doing. And what I'm getting here is it looks like there's a bunch of projects around preventing COVID-19, about diagnosing COVID-19, about treating COVID-19, and about talking about doing all of this. So what does it look like if we go into prevention?
+
+Cotton candy machine for distributed manufacturing
+
+of N95 masks, remote control ventilator project. Reusable snorkel mask. Off-the-shelf ventilator. So if I click one of these, I see a whole bunch of text, and if I click one more, I'll go to a website that is from Manu Prakash's lab, Manu's a colleague in bioengineering, and you've got this thing called the new mask. And maybe you've seen something like this coming out of Italy as well. They're basically taking a snorkel mask and using 3D printing and off-the-shelf componentry to put filtration over a snorkel mask such that you have a type of face shield for a healthcare worker. Okay.
+
+Ventilator remote control, genetic methods for eliminating the virus.
+
+So these are all prevention. I'll pop into here.
+
+Serological testing for immunity.
+
+What is that about? at the bottom. And until basically what it says is until there's a widely available vaccine testing whether or not somebody is immune to COVID is going to be one of the best tools for public health. All right. So, there are a bunch of people working on that. That's diagnosis. So, we've done prevention, diagnosis. Let's see if there's anything under treatment. Lots of things here. So computational screens identify drug candidates to treat COVID. What's happening here is biocomputational experts are looking at the entire collection of drugs that are safe to give people. So they're already pre-approved to be safe for people. Now trying to use machine learning and other tools to figure out whether or not any of these drugs might target any of the steps in covid replication or so forth.
+
+Use CRISPR to eliminate covid.
+
+So CRISPR is a tool for cutting DNA. If you could target the DNA cutting machinery to the covid genome, then maybe you could cut covered wherever it is. And so this is from Stanley Key and colleagues with a lot of work by heroic students to try and use this DNA cutting tool as a possible future treatment against both coronavirus infection, but in this case, flu infection. All right, let me back up. So, one of the things that's fairly amazing is pretty fast, it looks to me like half the department has deployed its skills in a lot of collaborations to figure out how to prevent COVID, how to diagnose COVID, how to treat COVID, and how to enable other people to do similar things. So that's amazing, actually. And I'd feel much still less comfortable than I do already if I didn't know about all these things. So I want to, though, ask you a question, because I think you can help me figure out something that's bothering me about all of this. So let me just go back to here. bothering me about all of this. So let me just go back to here.
+
+So if you parse that tour and can remember, you know, test your recall, what do all of these examples of bioengineers
+
+working on the topic of COVID-19 to help people and people's health have in common? What's, what's, what's, what's, what's like, what do we got? Diagnosis, prevention, treatment, all these detailed examples. So can anybody, just please think about it. And if you have any idea, please put it in the chat to everybody. What are, what are all these examples we just went through? What do they have in common? If anything, at a high level and as a hint, are there things in these examples that seem to be missing? So time manipulation, lacking implementation strategies, focusing on science, not implementation. Keep, yep, great. Anything else? Unlimited powers, only targeting one part of the problem. Unlimited powers, could you jump in and say a little bit more about what you're thinking, please?
+
+I was just thinking that it seems like they're all super specific and all super focused on one aspect of COVID, whether that's trying to prevent the transmission from one person to another, trying to prevent infection within a cell, or after that, maybe trying to limit symptoms. And I don't think there's any answer to that, but it is interesting that you can't find something that just works at any stage. So you have to get that specific to really solve the problem.
+
+Yeah, thank you. The plan for implementation and whatnot
+
+and the socioeconomic backing, I don't know which time manipulation it is, but time manipulation who added into the chat socio-economic backing, RN. Does that mean right now? Or could you say a little bit more about that?
+
+Yeah, it does mean right now. And just kind of that because we're like all trying to mobilize really fast for this one thing, we're able to throw a lot of resources at it
+
+and a lot of energy. I
+
+didn't do a perfect job giving you the tour, and in part that's because there's probably limited information on the website. But those projects, as described, are directly coupled in to what's scaling within UCSF hospitals, Stanford hospitals, the San Francisco Peninsula, the. The project, I'll just, I'll share one thing real quick. Sorry, just to give a sense of it. Like, you go. You see the standards working group. Coronavirus Standards Working Group, this is led by a colleague in bioengineering and at SLAC, the National Lab, and it's an ad hoc working group of about 100 organizations, companies and governments all over the world working to develop standard materials so that you could calibrate testing and everything needed to do any of the work in a way that supports reliability, scaling, repeatability. So I didn't do a great job in my initial tour, but there's a tremendous amount of applied translation baked into some of these activities, more than I would take for granted. Portal for students to help. That's pretty interesting. How many people, can you just raise your hand if you feel like you're disconnected and not in a position to help out with doing anything that needs doing right now?
+
+Yeah, let me just see.
+
+I'm sorry if you're on the phone only. You can raise your hand in the participant thing. Yeah, I put, can I just make a comment about that?
+
+I don't know if that's something like that exists and I just haven't found it. But do you think that that would be even a feasible idea? Because obviously there's a lot of like reliability issues and maybe trying to train students while working on the issue ends up being not the best use of time. But do you think that that is something feasible that,
+
+whether it's the bioengineering department or other departments, that there is a place for
+
+students to help? So let me, that's a great question. Thank you. If I take the standards working group as a benchmark, they're doing that work not to solve any problem today, because there's nothing they're going to get done today or tomorrow. The soonest they'll ship a product that would support global coordination of better and more reliable testing is about 10 weeks out. So call that June. So the reason they're doing the work in part is to get to a better June and beyond, because COVID is going to matter in June and it's going to matter in October and it's going to matter in June of 2021 somewhere. Maybe not at Stanford as much as it does now, but who knows? So this is not a totally goes away super fast situation. The other reason they're doing that work is to learn how to do such work such that the next time we have a pandemic, it doesn't take six months to figure out how to get the cooperation globally. It takes six hours or six days because the mechanic is pre-baked. And Flying just made a great comment there again, linking back to your question, manipulate time. Think about how it's going to play out in a refugee camp, right? Or think about how it's going to play out somewhere else. Right. And and it's not it's just daunting, be the simple thing to say. So what I'm what I'm seeing manipulate time in answer to your question is most people who are in positions of organizing people to do stuff are bandwidth limited and don't have additional bandwidth to organize people to do stuff. So in my lab, for example, with the PhD students, I would say about a third of them have now retasked what they're doing to do covid related stuff of their own initiative. And there's significant work taking place, but it's it's self-organized in a way. So my reflected question back to you would be and to everybody in the class, to the extent that it would be important or useful to you to contribute to the doing of something in the here and now, what would be the best mechanic by which to do that? And Sivash, the quiz that's open for this week, can we add a third question to it? That's a bonus question that would just simply be picking up on this, we'll get the words exactly right, but effectively, if you would like to contribute to something, by what mechanic would it be best to be organized to do that from your perspective? Okay, there's a lot more to talk about here
+
+and I know it's a very powerful topic
+
+and it's tricky to use it in class because it's so overwhelming. But I want to keep going because I want to try and illustrate something that didn't come up in the chat. All right. So let's try that.
+
+And I want to give you an example that's outside of bioengineering. So this is an example of the Cuyahoga River
+
+in the United States that in the 20th century would catch on fire. Rivers usually don't burn. Rivers of water usually don't burn. But post-industrialization, this river, the Cuyahoga, caught on fire a dozen or more times. And you can see the pictures of how they react to the fire. They put out the fire, the waterfront burns down, the wharf burns down, and so on. So this is an example from pollution control and environmental engineering. And I'm going to use this to introduce one of the skills for this week, which is to come up with ideas via spontaneous group discussion, and we'll come back to that. But before you brainstorm, really want to focus your attention on this word called framestorm. And this comes from a colleague, Tina Selig. The takeaway is basically, the question you ask will frame the answers you get. I'll give you a simple example, and then we'll practice this. If I said, okay, let's plan a birthday party for Mary, go brainstorm. I'm sure you'd do a great job planning a wonderful birthday party for Mary. But if I ask you a different question or task, let's plan something that Mary would enjoy. Maybe it would be a birthday party, maybe it would be something else. So the question you ask frames the answers you get. Implicit in the COVID experience is a question, what do we do about COVID? And it's an overwhelming question, but it's not the only question we can ask. So I'm going to come back to this. So let me come back to it through this example of pollution. The first engineering strategy for pollution is to ignore the pollution. This is called dilution solves pollution. And not that long ago, for most people, because there weren't that many people on Earth, less than a billion people on Earth just a few generations ago, you could ignore most pollution because the Earth was so much bigger than the pollution. That's a viable strategy.
+
+If that doesn't, so the question would be,
+
+how can we ignore pollution? Now you just ignore it. But then the next question would be, well, how do we react to pollution? The oil on top of the river that's causing the fire or providing the fuel for the fire. Well, we put out the fire. Or we could react better, like we'll buy a fire boat or a fire truck. Or how can we get even better at reacting? Maybe we'll capture the oil before it gets in the waterway and we'll treat it. So there's a whole other category of questions you could ask. Instead of ignoring the problem, you could say, how do we react to the problem or how do we get better at reacting to the problem? And when you look at COVID, we're operating in these two regimes mostly, these two frames, if that makes sense. We're either acting in the, we're ignoring it frame or not so much anymore. Now we're in the reacting frame, we're trying to put out the fire.
+
+But it also could prevent it.
+
+You could prevent the fires. You could, could you prevent a pandemic? Maybe you could change the environment.
+
+All right.
+
+Like the spare the air days for air pollution in San Francisco is an example of that. Maybe you could change the system inputs and that would prevent the problem in pollution, right? I go from leaded gas to unleaded gas. Maybe I could change the system. Refrigeration without chlorofluorocarbons, changing the system of refrigeration, solve the ozone problem. So it's very interesting to me about the solutions bioengineers are taking to address COVID, is they all seem to be in this orange category of reaction.
+
+It's asking the question,
+
+how do we get better at reacting to a pandemic. So, what I'd like you to do, if I can ask the class to set up into breakouts, is take this frame of reference set of options and see if you can fill in the blanks. All right? Bioengineering approaches to ignoring COVID or changing the system, changing the human. How could you change a human to prevent COVID? prevent covid. More specifically, when we go into breakout in a few seconds, see with your group if you can fill in all the blanks or ignore, react, prevent and then wildcard. Could you come up with a totally different strategy, a totally different category of strategy? So with that, if I could ask, we head into breakouts and try and tackle those questions.
+
+Well, so we're now gonna break up into groups of five or six people. We're gonna talk about brainstorming in the sense of COVID. So I'm gonna put everyone in breakout rooms and whoever has an alphabetical order of your first name, that person can go first. Okay.
+
+Celia. All right. Anyone else? You're getting the 1st 1 was like, right? And I think like. that case it's pretty straightforward. That would just be like not doing anything about the virus and just hoping that people will naturally develop an immunity or like already have that.
+
+There was a lot of examples in reacting. So I feel like I feel, you know, like better ventilators, better diagnostics, better personal protective equipment. So I don't know if that came across to you or not, but that one I felt pretty comfortable with,
+
+the reactive part, like an outbreak happens
+
+and we'll react and we can try and get better at reacting, but I'm not sure if you would agree with that. Does that one seem filled out to you?
+
+Yeah, is there also like somewhere else with all of the questions?
+
+That's a fine question. I'll put it back in the chat.
+
+So, it's ignore, react, prevent, and getting better at reaction and prevention.
+
+In terms of preventing, we could also say, for like changing the environment, that could be like cleaning surfaces and those kind of things as soon as it kind of dies down and going back through and cleaning surfaces and buildings and things like that to help prevent a further outbreak or
+
+continuing from how it's been.
+
+Why would you put something like distancing? The fact that we have to have class via Zoom. What is that? I think that's a reaction to like slow the spread.
+
+Not necessarily, I wouldn't say it's a prevention.
+
+Yeah, I think it's also a reaction
+
+because these are measures that were implemented after we realized that, you know, it came after there was the first couple of cases in Santa Clara County. And so in response to the first few cases already appearing, we're reacting by implementing these measures. It's interesting, it is a reaction, but it seems like it's a change in the environment, right?
+
+We're changing the environment that the virus is encountering
+
+such that it's harder to transmit. Would the prevention be the prevention of like me myself getting sick or would it be
+
+like preventing a pandemic in the future? That's good.
+
+What do you think?
+
+I mean, I think I was considering it more as in like preventing future pandemics. But I guess you could consider it either.
+
+Yes, so you could have a vaccine to cove it right. And that might help. Or you could have an ability to make vaccines instantaneously for anything. Yeah, I guess it's not
+
+necessarily doing anything to COVID specifically, it's like, more about symptoms or like, I guess kind of because like, if you get better, like, that means it's gone and my feet are out and my body's whatever, but like, I guess I'm wondering, like, where would treatment come?
+
+I would put it under reacting better with better medicines. So you can you can react in nature.
+
+You could react outside of nature in the hospital. So medicines, I think, would be better reaction. I also know Stanford has developed a bunch of different tests.
+
+I think most recently they have went at this new antibody test. I was wondering which category does that fall under? Diagnostics. Testing and diagnostics are synonymous. So I would put it under better reaction.
+
+What does ignoring look like in this case? Pandemic runs its course. Oh, OK. Just like doing nothing.
+
+Yeah.
+
+Yeah.
+
+No, I thought stop time had that well described.
+
+Yeah.
+
+Alright, looks like we're going to get pulled out of here, huh?
+
+See you again soon.
+
+So for those who just joined, put things you discussed in the chat and we'll
+
+come together as a class.
+
+Drew, I think you're on mute.
+
+What's coming in the chat is great, so just to encourage if each group could just jot down the most interesting comment or point and then also if they found a totally different frame of reference besides ignore, react, or prevent.
+
+So, a lot of interesting comments here. One that I think is interesting is changing the environment to basically reduce the risk of pandemics. I know there's a lot of discussion about how climate change is influencing all of this. So something to think about from a bioengineering perspective. Teleportation says there's an interesting debate about whether social distancing A lot of people are talking about vaccines. One interesting frame of reference, so changing the animal genes that spread the pandemic. So fundamentally kind of altering the way that the disease is spread. Of course, you could think about how that might help or might harm if things go wrong.
+
+I wanna pick up on something that's coming in a couple different ways.
+
+Ignore it, let it spread till it dies out naturally, call the herd, embrace adaptive immunity approach. It's a valid strategy. One of the puzzles that we'll get to on Friday regarding this is the connectedness between biological reality and political expectation. So, for example, the Black Death, the plague in Europe centuries ago killed about one third of the population of Europe. There's more people in Europe today than there were back then. So, from a biological perspective, the species, the human, totally fine. But culturally, if I had to guess, I'm pretty sure everybody here has heard the words black death or plague, right? Because culturally and politically, that experience had a massive imprint on our history. So to abstract that, there's this big puzzle, which is how does one reconcile the reality of survival of the fittest in nature with the expectations of representative democracies that are meaning to protect individuals? And so I actually don't think you can reconcile that fundamentally, but hence the tension. So just note the connectedness there, and we'll get to that on Friday. Other things showing up in the chat you want to highlight? I'm seeing a lot of people talking about how we can change the environment.
+
+So again, whether it be decreasing the risk of new pandemics from emerging, changing the genes of COVID itself.
+
+I also think there's a pretty strong strain of let's change the animals who give us the virus. What can we do about that? There must be something we can do
+
+about that. We can rewrite their genes. We can get rid of bats. We can make bats our friends. Bats our friends. Batman. Batman and Batwoman. Okay.
+
+Humanize the bats.
+
+Did anybody say anything about changing the people? Couldn't we, like, engineer the human genome to not be infected by this thing? Wouldn't that be useful?
+
+My team said that. First they said, let's make bats our friends. Then they said, let's make us the friends of the bats.
+
+I see.
+
+Okay. This is great. I'm glad we have stretched a little bit and have a framework now to think about engineering approaches to anything. We use pollution as an example, we use COVID as an example. I wanna bring it back to people health and I'll transition by doing my best to share what I could come up with, what I see. So here's how, when I filled in the blanks, ignore is you let the pandemic run its course, you call the herd, react, better urgent care, ICU's ventilators, excuse me, whatever you got, better reaction, be better diagnosis, you could deploy them in situ, ex-situ means in the hospital or somewhere else, so more better PPE, better medicines. I scored social distancing as reacting to the event, but you're changing the environment. So changing the environment for the virus, change inputs to the virus, the patient, the possible host would be a vaccine. And then what Michael and I were just talking about, could you change the human itself or the bats, you change the system, you do germline engineering, not without controversy. Here's a bonus topic. And again, recall one of the fourth, the fourth goal we have for the quarter is you developing action plans in your projects for the quarter. So, here's a wild card. What would we need to do to make all infectious diseases obsolete? And how about we go do that? So that we're never surprised by an infectious disease ever again. Is that right, John? What do we want to call it? We want to call this avoiding Sputnik in biology. OK, so no more no more surprise in epidemiology. No more no more surprise pandemics, please. So I'm trying to get I'm just trying to nudge people a little bit out of the mindset. Well, let's just wait for the next one and we'll get better at reacting because that's like a bad strategy. It's like qualitatively bad strategy. So maybe there's some projects to think about on this wildcard. All right.
+
+Take a breath.
+
+In the pre-class for today, you got a whole bunch of data and some examples, and I just want to acknowledge that and now zoom out and highlight an aspect of it. So not that long ago, people didn't really pay attention to what killed people. But within the last several hundred years, we've started to do more than ignore what's going on systematically. And so you can see the data for Boston, for example, just over 200 years ago for causes of death in the year 1812. You can see the trends between 1900 and 2010 for causes of death. So hopefully you took a look at this. It's numbers of death per year per 100,000 people, so that's gone down.
+
+I don't wanna belabor it, but the boxes are moving, and hopefully when you looked at this and you thought about some of the study questions, you lifted the lid on that. So I wanna pose some questions for a second breakout that we're gonna try and fit in, because we've got 10 minutes and this should fit in nicely. We'll do maybe four minutes and break out. If you go back to this trend line or trend plot, you can kind of get a sense of what's changing.
+
+And so if you wanted to be a bio engineer in the year 2030 or 2040, working on people's health, maybe you'll become a doctor, maybe you'll be a tool developer, maybe you'll be an entrepreneur, maybe you'll be a policy leader. How should you spend your life energy? What should you be working on? And do you follow these historical trends here? Does that give you some insight into what people and people's health will most demand in 10 years, 20 years? That's one question. So what should bioengineers focus on as related to people health? Drawing on your pre-class studying, but then drawing from today's experience. Is there something missing in this data?
+
+Is there some gap in the portfolio of opportunity that bioengineers need to see? It's a blind spot. And we don't we don't know to look for it because it's not giving a signal. So. So I want to pause there and ask for another breakout, please. And we'll pose the two questions in the chat. The questions, again, are based on the trends, what should bioengineers focus on? And is there something missing from the trends that if you wanted to prevent surprise regarding people's health, we should start working on right now, so that we're not surprised when it shows up in five, 10, 15, 20 years.
+
+Photographic memory, huh? Yeah, I think that'd be very, very helpful in terms of studying and also research reason. You don't have to worry about writing everything down your lab notebook anymore. Do you think photographic memory, does that come with infinite bandwidth? Meaning there's no latency in terms of recall? That's what I was hoping it would be. Okay, so it's photographic memory with infinite, no infinite no latency yeah yeah so that sort of becomes a form of teleportation or telekinesis because they're the information has to be stored somewhere so I wonder if that gets you telekinesis so it could be photographic memory is the ultimate superpower which I should telekinesis and then get you time travel
+
+That would be amazing.
+
+It was a good conversation. I think we were just getting going there. If you go back to the pre-class material for today and you look at those two plots, the 1900 plot and the 2010 plot, the biggest things in that 2010 plot are heart disease and cancer, right? And then a lot of other things that collectively are the remaining 40%.
+
+So it's a little bit interesting how what's coming back in the chat is not matched to that, which is fine. Right, and it's the contrast at least to the last year, which was very focused on both cardiovascular health and cancer as well.
+
+Did anybody surface drug resistance, antibiotic resistance? If you go back and look 100 years ago or so, death to infectious disease is pretty high and gone away. Our group did talk about antibiotic resistance. How did it come up or why were you thinking about that?
+
+We were just thinking about how, like the previous data circa 1900, how a lot of those diseases we've solved, quote unquote, with penicillin, et cetera, but now we're seeing that these diseases are mutating and adapting, and we're not necessarily adapting along with it in terms of our funding and our research. So those can become threats again.
+
+Would you consider resistance to be a gap then in the trend line that's not showing up in the bar chart?
+
+I don't think I would know enough to say that it's necessarily a gap, but I think that maybe some of the most vulnerable populations would be seeing this more so than the United States, and so who knows if that's being reported or not.
+
+Anybody come up with a I'm trying to call it out of the chat. Does anybody do any other group have a real strong theme around why we're just totally blind to this puzzle or need or challenge regarding people's health. I don't know if this is a correct interpretation, but in our group, we also talked a little bit about the food industry, and I think the common denominator with all of the health problems that were at the top of the list today, other than the lung issues, was related to things that people put in their body, like when you talk about heart disease and cancer, the food that you eat plays a huge role in that. And so it's interesting as to why we're not putting more energy into engineering our food, like how we grow it, how we can make healthier foods less expensive. And I think it's really interesting because we don't have to wait on any new technology to do that. I mean, like we have all the technology right now. So I think it's a matter of where the money is and also where, like who's doing the research.
+
+I totally agree with you. And I would add to that, the questions being asked that are used to tell stories that motivate people to be organized to do something is incredibly limiting. So let me pick that to wrap for today. And just gonna share a few slides back and one more slide. So, you've seen this plot, right? This is a clue for what the existing market is, so to speak, the conventional market for people's health in the West, which is not most people, but it's imperfect representation of reality. We've talked about how if you only look at an opportunity that's a crisis, like health, we have to react to when things are bad, you're missing most of what you could do as an opportunity. And so we're introducing you and we'll come back to this idea of framestorming as a tool. So lots and lots of opportunity to contribute to people health, lots of opportunity to be amazing as a leader and a storyteller and as a doer by escaping conventional frames of reference that are just reactive at best. So here's the last slide just to share for today. It was part of today's reading. It has to do with malaria transmitted by a mosquito and how we have treatments for malaria, how we make those treatments can change through bioengineering practice, but the change in practice has connectedness to other things such as livelihoods, employment, supply chain reliability, emergence or not of drug resistance to the treatment, and so on and so on and so on and so on. And so hopefully you were able to build your knowledge base around malaria for today's class. And as we head into Wednesday, we'll be picking up on planetary health and the connectedness between people health and planet health, and that'll spill into Friday. Subhash, you want to give us an additional comment on this?
+
+Yes. As we go next class, we will have the, an additional tool that talks about that, if we pick a solution, how would that solution have primary and secondary effects around that topic. And as you think about, like we focused on health today, but our wish is also added to having the content and the skills is to introduce you to these material early so that you begin to think about your project, your group project going forward.
+
+So hopefully you've got people health in your mind and you've got the idea of frame of reference shift and framestorming. We'll do planet health and political health next and the next tool will be the future wheel that's Subhash is leading. John, do we have any announcements before we wrap up?
