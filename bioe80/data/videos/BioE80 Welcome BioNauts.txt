@@ -1,0 +1,74 @@
+Hey there, welcome to Introduction to Bioengineering at Stanford University. Did you know that bioengineering is the newest engineering major here at Stanford?
+
+Yeah, it's the first major to get introduced since 1960. And that other major was computer science, which has been a pretty big deal.
+
+Yeah, I guess. I mean, computers are important, but they only deal with bits, you know? And biology deals with bits and atoms, the stuff of life. And, you know, that's what bioengineering is about. Now, of course, as the newest major, what does that mean? How old are we? 19, say, we're not that old. We're 18 years old, like a lot of you, perhaps. That means you're part of the first bioengineering generation.
+
+And we wanna help you shape this bioengineering discipline. We want for you to become bionauts.
+
+Bionauts?
+
+Yeah, you know, like astronauts, but for biology. By learning about bioengineering, we hope that you get the option of becoming a leader or an adventurer who can shape a future and do good in a future that's increasingly biotic.
+
+I like how that sounds, a biotic future. Well, that's the framing of the course, but how's the course gonna work? How are you gonna experience it? How are we gonna motivate all this hard work of learning?
+
+The first thing we're gonna do
+
+is we're gonna introduce you to bioengineering from accessible and pressing and important problems, things like cancer. What can bioengineers do about cancer? Cancel it.
+
+Sounds good.
+
+How about infectious disease?
+
+Make them obsolete.
+
+Bioengineers, could we help with the food supply? make a mousseline.
+
+Mm-hmm. Bioengineers, could we help with the food supply?
+
+Yeah, we should make nutritious and cheap food for everybody.
+
+Let's see, bioengineers, could we work with the doctors and medicines?
+
+Yeah, let's make new medicines. Cure all the diseases. Every disease? Yeah, all of them. All right. So, what about nature?
+
+I hear things are going extinct more than ever before. Well, let's fix that.
+
+How are we going to fix that? I know medicines for our endangered friends.
+
+Oh, medicines for animals?
+
+Yeah.
+
+Bringing things back from extinction? Oh, also that. OK. Bioengineering beyond humans. Anyway, you get the idea. All these topics you're going to experience through this course, and we'll use these topics to motivate your learning
+
+around fundamental tools and skills in bioengineering. Yeah, but here's where it gets really neat. You're going to learn some fundamental tools. Things like how to manipulate and design DNA so that you can have an impact on all these different areas. There's a nice through-line through bioengineering
+
+that allows you to make an impact in a lot of different spaces. Hmm. Because when you learn how to engineer biology systematically,
+
+it's sort of like learning how to program a computer systematically.
+
+You know, you could write a program for music or financial analysis or planning a bus route. You know, that skill set needed to program a computer is agnostic with respect to the applications. The same thing's going on today in bioengineering. By learning the fundamental skills and tools needed to work from inside cells out, you get a general purpose capacity to partner with biology to solve problems.
+
+Now by the end of this class we hope that you'll have an understanding of the enormous impact that bioengineering is already having on people and the planet. We want you to learn how to read, understand, and debate what's happening in bioengineering so that you can be a leader and a citizen about all things
+
+related to biotechnology. One of the parts of the class that's super important is because bioengineering is young, most of what you could do with it hasn't been imagined. Yes, we have plenty of compelling examples to help you learn, but most of what could be done in the future with bioengineering over your lifetime, nobody's imagined. And so an essential part of this course is you will have a project where you get to imagine what bioengineers could do. Something that's relevant to you wherever you are and how you see the world and what you wish the world to be. So this course project towards the end of the quarter will be a really essential and exciting component for the course.
+
+We're really excited to be your guides on this journey from where you are now to the bio frontier.
+
+How about us? Who are we? You might be wondering.
+
+Jen, what about you?
+
+Well, I'm Jen Brophy. I'm an assistant professor at Stanford. And I teach classes, as you can tell. But I also run a research lab. In my lab, we engineer bacteria and plants in order to try to make them more resilient to climate
+
+change.
+
+I got interested in this when I was in college, where I read a article in the school newspaper about people trying to engineer biofuels and bacteria. And I thought, that was really cool. It got me interested in bioengineering and that desire to make a difference in sustainability has been motivating me ever since.
+
+So cool. I am Jen's colleague, Professor Brophy colleague. My name is Drew Endy, also a professor here in bioengineering to make the world more awesome. I don't grow up in California, I grew up in Pennsylvania. I love nature, but when I was a high school student, I really struggled with biology. I hate memorizing things. It's like, oh my gosh, it just wasn't for me. But I do like to build things, and I do like to understand how things work. You know, I thought I was going to become a civil engineer and work on roads and bridges, but over time what I learned is that the best way to build something is to grow it. Biology is nature's builder. Anywhere on the planet you can work with life to grow something with atomic precision into some big structure or time whatever you want and so that's why I've become a bioengineer and you know gives you some sense of why this class is so exciting to me. In any case, the class is about you, and Professor Brophy and I are really excited to be able to work with you over the next few months to introduce you to bioengineering.
+
+Yeah. Yeah.
+
+Bionauts Assemble!
+

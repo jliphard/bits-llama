@@ -5,15 +5,24 @@
 Install the following:
 
 ```shell
-pip3 install llama_index
-pip3 install torch transformers sentencepiece Pillow
-pip3 install pypdf
+% pip3 install llama_index
+% pip3 install torch transformers sentencepiece Pillow
+% pip3 install pypdf
+% !pip3 install pytube
+% pip3 install pydub
+% brew install ffmpeg // assuming you are on Mac silicon, which everyone is...
 ```
 
 Provide an OpenAI access token:
 
 ```shell
-export OPENAI_API_KEY=sk-.....
+% export OPENAI_API_KEY=sk-.....
+```
+
+Populate the `/data` folder with your tuning data. For example, to download the audio for all BioE lectures from `https://introbioe.stanford.edu/lectures-interviews`, run
+
+```shell
+% python3 download_audio.py 
 ```
 
 Run the indexer, if you have added new tuning data or if this is the first time you are running the system:
