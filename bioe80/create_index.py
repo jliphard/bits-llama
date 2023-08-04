@@ -4,8 +4,7 @@ import os
 
 print("Generating new index")
 
-# only load markdown and pdf files
-required_exts = [".md", ".pdf"]
+required_exts = [".md", ".pdf", ".txt"]
 
 reader = SimpleDirectoryReader(
 	input_dir="./data",
