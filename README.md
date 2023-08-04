@@ -99,7 +99,7 @@ In the future, I wish to realize a world where bioengineering is used to improve
 
 *What's the best way to synthesize DNA?*
 
-The best way to synthesize DNA is to plan the project goals, design the sequence, synthesize oligos, assemble oligos into linear fragments and larger constructs (if applicable), and verify the sequence of the gene fragment or cloned product. Additionally, it is recommended to consider factors like timelines for downstream assay work or collaborator availability, survey the literature to reveal known issues in the synthesis of the target sequence, analyze the coding DNA sequence (CDS) for critical elements, and use a codon optimization tool to improve the sequence for optimal synthesis and downstream performance. Lastly, it is recommended to consider using a service provider to reduce error, labor, and time required for synthesizing genes.
+The best way to synthesize DNA is to use a combination of oligonucleotide synthesis and assembly techniques. Oligonucleotides can be synthesized using phosphoramidate chemistry, and then assembled into larger DNA fragments using overlap extension PCR. This method allows for the synthesis of DNA fragments up to 100 or 50 bases in length with high fidelity. However, it is not suitable for synthesizing repeated sequences. To overcome this limitation, it is possible to use templated DNA synthesis with a polymerase to fill in the gaps between the short synthesized regions. Additionally, the cost of DNA synthesis and sequencing is decreasing rapidly due to Moore's law, making it more accessible to researchers.
 
 *Can you explain more about oligo assembly*
 
