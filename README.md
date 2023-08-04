@@ -45,11 +45,13 @@ Finally, try it out....
 
 Downloaded all of https://github.com/Stanford-BioE80/Stanford-BioE80.github.io
 
-Ingested all `.md` and `.pdf` files
+Downloaded all of https://introbioe.stanford.edu
 
-Loaded 781 docs and indexed. 
+Indexed all `.md`, `.txt`, and `.pdf` files
 
 ## Unedited Question/Answer Pairs
+
+These were not human-editied - this is raw output from the model.
 
 *What is the goal of BioE80?*
 
@@ -93,6 +95,6 @@ Oligo assembly is a process of joining short synthetic DNA fragments together to
 
 ## Main impressions
 
-Training on the 781 RAW documents took 3 mins on my laptop. Some answers are great and some are _initially_ crazy/dumb (see e.g. "How can I synthesize DNA?[pre-training]") and can be improved withing a few seconds by adding material relevant to the question (see e.g. "How can I synthesize DNA?[post-training]"). Tuning with relevant material immediately helps. The system does best when there is training material that is similar to the question/prompt. The system does best when trained with essays and question/answer pairs.
+Training on the 781 RAW documents took 3 mins on my laptop. Some answers are great and some are _initially_ crazy/dumb (see e.g. "How can I synthesize DNA?[BAD ANSWER before Tuning]") and can be improved withing a few seconds by adding material relevant to the question (see e.g. "How can I synthesize DNA?[after Tuning]"). Tuning with relevant material immediately helps. The system does best when there is training material that is similar to the question/prompt. The system does best when trained with essays and question/answer pairs.
 
 
