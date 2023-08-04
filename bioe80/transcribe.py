@@ -17,8 +17,8 @@ for file_name in files:
 	filenameT = file_name.replace(".mp4", ".txt")
 
 	# test for segment transcription
-	if "_Seg" not in filenameT :
-		# this is full or unsegmented - have we already transcribed a segment?
+	if "_Seg" not in filenameT and file_size_MB >= 24:
+		# this is a LARGE full or unsegmented file - have we already transcribed a segment?
 		filenameT = file_name.replace(".mp4", "_Seg0.txt")
 
 	alreadyTranscribed = os.path.isfile(filenameT)
