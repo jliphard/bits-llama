@@ -25,17 +25,29 @@ Populate the `/data` folder with your tuning data. For example, to download the 
 % python3 download_audio.py 
 ```
 
-Run the indexer, if you have added new tuning data or if this is the first time you are running the system:
+Some of these files will be too big for `OpenAI Whisper` to transcribe, so:
+
+```shell
+% python3 segment_audio.py 
+```
+
+Then, transcribe the audio:
+
+```shell
+% python3 transcribe.py 
+```
+
+Finally, run the indexer, if you have added new tuning data or if this is the first time you are running the system:
 
 ```shell
 % cd bioe80
 % python3 create_index.py
 
 Generating new index
-Loaded 884 docs. Please be patient...
+Loaded 964 docs. Please be patient...
 ```
 
-Finally, try it out....
+Now, try it out....
 
 ```shell
 % python3 query.py
