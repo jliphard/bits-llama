@@ -1,4 +1,4 @@
-# BITS, a digital TA
+# BITS: A rapidly re-tunable digital TA
 
 This is a digital TA built on OpenAI's ChatGPT-3.5, `llama_index`, and `langchain`. 
 
