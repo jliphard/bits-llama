@@ -25,7 +25,7 @@ Consider GPT-3.5's (initial) answer to a simple question:
 
 _AgentExecutor> To synthesize DNA, you can use a four-key keyboard to input raw chemicals that are not derived from existing DNA. You can then play with the chemicals to get the desired DNA sequence. Additionally, you can optimize synthetic chemistry for accuracy to ensure that the DNA sequence is correct._
 
-If you know anything about DNA, this is really funny but about as wrong as it could be. However, after tuning on BioE80 course materials, we end up with a useful, clear, and entirely correct answer: 
+If you know anything about DNA, this is really funny but about as wrong as it could be. However, after tuning on BioE80 course materials, we end up with a useful, clear, and technically correct answer: 
 
 *INPUT: (Human) How can I synthesize DNA?*
 
@@ -64,12 +64,11 @@ tools = [
         name="BITS",
         func=lambda q: str(index.as_query_engine().query(q)),
         description="useful for when you want to answer questions about your class. The input to this tool should be a complete english sentence.",
-        return_direct=True,
-    ),
+        return_direct=True),
 ]
 ```
 
-and use the tool and LLM to instantiate a `langchain` agent:
+and use the tool and an LLM to instantiate a `langchain` agent:
 
 ```python
 from langchain.chat_models import ChatOpenAI
@@ -87,12 +86,12 @@ agent_executor = initialize_agent(
 
 This agent then responds to course-focused questions with tuned responses:
 
-```shell
-[tool/start] [1:chain:AgentExecutor > 4:tool:BITS] Entering Tool run with input:
-"Please summarize the BioE80 course"
-[tool/end] [1:chain:AgentExecutor > 4:tool:BITS] [3.01s] Exiting Tool run with output:
-"BioE80 is an Introduction to Bioengineering (Engineering Living Matter) course that aims to help students learn ways of thinking about engineering living matter, empower them to explore and do bioengineering starting from DNA, and become more capable of learning and explaining bioengineering to themselves and others. Additionally, the course seeks to enable students to devise and express their wishes for bioengineering as might be made true by or before 2030, and to develop practical plans for making their wishes real."
-```
+
+*[tool/start] [1:chain:AgentExecutor > 4:tool:BITS] Entering Tool run with input:
+"Please summarize the BioE80 course"*
+
+_[tool/end] [1:chain:AgentExecutor > 4:tool:BITS] [3.01s] Exiting Tool run with output:
+"BioE80 is an Introduction to Bioengineering (Engineering Living Matter) course that aims to help students learn ways of thinking about engineering living matter, empower them to explore and do bioengineering starting from DNA, and become more capable of learning and explaining bioengineering to themselves and others. Additionally, the course seeks to enable students to devise and express their wishes for bioengineering as might be made true by or before 2030, and to develop practical plans for making their wishes real."_
 
 ## Usage
 
@@ -102,7 +101,7 @@ Install the following:
 % pip3 install llama_index
 % pip3 install torch transformers sentencepiece Pillow
 % pip3 install pypdf pytube pydub
-% brew install ffmpeg // assuming you are on Mac silicon, which everyone is...
+% brew install ffmpeg
 ```
 
 Provide an OpenAI access token:
@@ -111,29 +110,28 @@ Provide an OpenAI access token:
 % export OPENAI_API_KEY=sk-.....
 ```
 
-Populate the `/data` folder with your tuning data. For example, to download the audio for all BioE lectures from [BioE lectures-interviews](https://introbioe.stanford.edu/lectures-interviews), run
+Populate the `PROJECT/data` folder with your tuning data. For example, to download the audio for all BioE lectures from [BioE lectures-interviews](https://introbioe.stanford.edu/lectures-interviews), run
 
 ```shell
-% python3 download_audio.py 
+% python3 1_download_audio.py --path ./bioe80
 ```
 
 Some of these files will be too big for `OpenAI Whisper` to transcribe, so:
 
 ```shell
-% python3 segment_audio.py 
+% python3 2_segment_audio.py --path ./bioe80 
 ```
 
 Then, transcribe the audio:
 
 ```shell
-% python3 transcribe.py 
+% python3 3_transcribe.py --path ./bioe80
 ```
 
 Finally, run the indexer, if you have added new tuning data or if this is the first time you are running the system:
 
 ```shell
-% cd bioe80
-% python3 create_index.py
+% python3 4_create_index.py --path ./bioe80
 
 Generating new index
 Loaded 964 docs. Please be patient...
@@ -142,12 +140,12 @@ Loaded 964 docs. Please be patient...
 Now, try it out....
 
 ```shell
-% python3 query.py
+% python3 5_query.py --path ./bioe80
 ```
 
 ## Methods
 
-Downloaded all of [Stanford-BioE80.github.io](https://github.com/Stanford-BioE80/Stanford-BioE80.github.io) and [introbioe.stanford.edu](https://introbioe.stanford.edu). Indexed all `.md`, `.txt`, and `.pdf` files.
+Downloaded all of [Stanford-BioE80.github.io](https://github.com/Stanford-BioE80/Stanford-BioE80.github.io) and [introbioe.stanford.edu](https://introbioe.stanford.edu). Indexed all `.md`, `.txt`, and `.pdf` files. Generated an index following the above instuctions. 
 
 ## Unedited Question/Answer Pairs
 
@@ -169,11 +167,11 @@ Living matter is any material composed of cells that are capable of growth, meta
 
 Yes, living matter can self-organize. This is evidenced by the fact that living matter is intricately organized on multiple time and spatial scales, and is capable of self-mixing, self-healing, and self-replicating.
 
-*How can I synthesize DNA? [BAD ANSWER before Tuning]*
+*How can I synthesize DNA? [BAD answer before Tuning]*
 
 To synthesize DNA, you can use a four-key keyboard to input raw chemicals that are not derived from existing DNA. You can then play with the chemicals to get the desired DNA sequence. Additionally, you can optimize synthetic chemistry for accuracy to ensure that the DNA sequence is correct.
 
-*How can I synthesize DNA? [after Tuning]*
+*How can I synthesize DNA? [GOOD answer after Tuning]*
 
 DNA can be synthesized by first designing the sequence, then synthesizing oligonucleotides (oligos) from the sequence, and finally assembling the oligos into double-stranded DNA (dsDNA) fragments. This process is known as artificial DNA synthesis and is a fundamental tool of synthetic biology. The oligos are synthesized using a process called phosphoramidite-based oligo synthesis, which involves building the oligo chain on a solid support through cycles of chemical reactions. The dsDNA fragments are then assembled using polymerase cycling assembly.
 
