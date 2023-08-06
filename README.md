@@ -1,16 +1,49 @@
+- [BITS, a digital TA](#bits--a-digital-ta)
+  * [What's the point of Tuning?](#what-s-the-point-of-tuning-)
+  * [Technical Overview](#technical-overview)
+  * [Usage](#usage)
+  * [Methods](#methods)
+  * [Unedited Question/Answer Pairs](#unedited-question-answer-pairs)
+  * [Conversation example - unedited/raw output](#conversation-example---unedited-raw-output)
+  * [Main impressions](#main-impressions)
+
 # BITS, a digital TA
 
 This is a digital TA built on OpenAI's ChatGPT-3.5, `llama_index`, and `langchain`. 
 
-The central premise is that educators seek great learning tools for their students but that "generic" educational chatbots trained on a generic, fixed corpus miss the mark. Many educators wish to take materials specific to _their_ course, and which their reflect their unique point of view, and use that information to fine-tune the responses for their students. Tuning is not just about creating course-specific digital TAs, but also being able to respond to student needs/questions by quickly adding responsive materials to the tuning set, enabling BITs to within minutes provide great answers to common questions.
+The central premise is that educators seek great learning tools for their students but that educational chatbots trained on a generic, fixed corpus miss the mark. Rather, many educators wish to take materials specific to _their_ course, and which their reflect their unique point of view, and use that information to fine-tune the responses for their students. Tuning is not just about creating course-specific digital TAs, but also being able to respond to student needs/questions by quickly adding responsive materials to the tuning set, enabling BITs to within minutes provide great answers to common questions.
 
-A desire for course-specific digital TAs is also shared by the students, since they generally care less about what Wikipedia says and more about what their instructors think.       
+A desire for course-specific digital TAs is also shared by the students, since they generally care less about what Wikipedia says and more about what their instructors think (hopefully, at least).      
+
+## What's the point of Tuning?
+
+Consider ChatGPT's (initial) answer to simple question:
+
+```shell
+INPUT: (Human) How can I synthesize DNA?
+
+AgentExecutor> To synthesize DNA, you can use a four-key keyboard to input raw chemicals that are not derived from existing DNA. You can then play with the chemicals to get the desired DNA sequence. Additionally, you can optimize synthetic chemistry for accuracy to ensure that the DNA sequence is correct.
+```
+
+If you know anything about DNA, this is really funny but about as wrong as it could be. After tuning on Bioe80 course materials, 
+
+```shell
+INPUT: (Human) How can I synthesize DNA?
+
+AgentExecutor-Tuned> DNA can be synthesized by first designing the sequence, then synthesizing oligonucleotides (oligos) from the sequence, and finally assembling the oligos into double-stranded DNA (dsDNA) fragments. This process is known as artificial DNA synthesis and is a fundamental tool of synthetic biology. The oligos are synthesized using a process called phosphoramidite-based oligo synthesis, which involves building the oligo chain on a solid support through cycles of chemical reactions. The dsDNA fragments are then assembled using polymerase cycling assembly.
+```
+
+we end up with a useful, clear, and entirely correct answer. 
 
 ## Technical Overview
 
-The heart of the system is the `data` folder, which contains lecture notes, lecture transcriptions, papers, and other course materials. This repo contains as an example the course materials for BioE80, Stanford's flagship "Introduction to Bioengineering" class, but nothing in the code is specific to BioE. 
+BITS uses [llama_index](https://github.com/jerryjliu/llama_index), a toolkit for augmenting LLMs with "private" data. Llama_index is used to structure your course data (e.g. lecture notes in `.txt` format to `indices`). The structured data can then be combined with an LLM input prompt, yielding knowledge-augmented outputs from generic LLMs such as GhatGPT-3.5.
 
-The repo contains various helper functions, such as code to download videos from youTube and then transcribe them with openAI's `Whisper`. 
+The practical heart of the system is the `data` folder, which contains lecture notes, lecture transcriptions, papers, and other course materials. 
+
+This repo contains as an example the course materials for BioE80, Stanford's flagship "Introduction to Bioengineering" class, but nothing in the code is specific to BioE80. 
+
+The repo also contains various helper functions, such as code to download lecture videos from YouTube and then transcribe them with OpenAI's `Whisper`. 
 
 The tuning data are used to create an `index`:
 
@@ -73,7 +106,7 @@ Install the following:
 % pip3 install llama_index
 % pip3 install torch transformers sentencepiece Pillow
 % pip3 install pypdf
-% !pip3 install pytube
+% pip3 install pytube
 % pip3 install pydub
 % brew install ffmpeg // assuming you are on Mac silicon, which everyone is...
 ```
