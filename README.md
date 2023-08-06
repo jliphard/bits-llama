@@ -1,4 +1,69 @@
-# DigitalTA
+# BITS, a digital TA
+
+This is a digital TA built on OpenAI's ChatGPT-3.5, `llama_index`, and `langchain`. 
+
+The central premise is that educators seek great learning tools for their students but that "generic" educational chatbots trained on a generic, fixed corpus miss the mark. Many educators wish to take materials specific to _their_ course, and which their reflect their unique point of view, and use that information to fine-tune the responses for their students. Tuning is not just about creating course-specific digital TAs, but also being able to respond to student needs/questions by quickly adding responsive materials to the tuning set, enabling BITs to within minutes provide great answers to common questions.
+
+A desire for course-specific digital TAs is also shared by the students, since they generally care less about what Wikipedia says and more about what their instructors think.       
+
+## Technical Overview
+
+The heart of the system is the `data` folder, which contains lecture notes, lecture transcriptions, papers, and other course materials. This repo contains as an example the course materials for BioE80, Stanford's flagship "Introduction to Bioengineering" class, but nothing in the code is specific to BioE. 
+
+The repo contains various helper functions, such as code to download videos from youTube and then transcribe them with openAI's `Whisper`. 
+
+The tuning data are used to create an `index`:
+
+```python
+required_exts = [".md", ".pdf", ".txt"]
+reader = SimpleDirectoryReader(input_dir="./data", required_exts=required_exts, recursive=True)
+```
+
+The `index` can then be used directly as an input to ChatGPT. `llama_index` will handle the details in the background:
+
+```python
+query_engine = index.as_query_engine()
+response = query_engine.query("What's the best way to synthesize DNA?")
+print(response)
+```
+
+To build `BITS`, the chatbot, we define a `LlamaIndex tool`:
+
+```python
+tools = [
+    Tool(
+        name="LlamaIndex",
+        func=lambda q: str(index.as_query_engine().query(q)),
+        description="useful for when you want to answer questions about your class. The input to this tool should be a complete english sentence.",
+        return_direct=True,
+    ),
+]
+```
+
+and use the tool and LLM to instantiate a `langchain` agent:
+
+```python
+from langchain.chat_models import ChatOpenAI
+from langchain.agents import initialize_agent
+
+memory = ConversationBufferMemory(memory_key="chat_history")
+llm = ChatOpenAI(temperature=0, max_tokens=512, model_name="gpt-3.5-turbo")
+agent_executor = initialize_agent(
+	tools, 
+	llm, 
+	agent="conversational-react-description", 
+	memory=memory, 
+	verbose=True)
+```
+
+This agent then responds to course-focused questions with tuned responses:
+
+```shell
+[tool/start] [1:chain:AgentExecutor > 4:tool:LlamaIndex] Entering Tool run with input:
+"Please summarize the BioE80 course"
+[tool/end] [1:chain:AgentExecutor > 4:tool:LlamaIndex] [3.01s] Exiting Tool run with output:
+"BioE80 is an Introduction to Bioengineering (Engineering Living Matter) course that aims to help students learn ways of thinking about engineering living matter, empower them to explore and do bioengineering starting from DNA, and become more capable of learning and explaining bioengineering to themselves and others. Additionally, the course seeks to enable students to devise and express their wishes for bioengineering as might be made true by or before 2030, and to develop practical plans for making their wishes real."
+```
 
 ## Usage
 
@@ -19,7 +84,7 @@ Provide an OpenAI access token:
 % export OPENAI_API_KEY=sk-.....
 ```
 
-Populate the `/data` folder with your tuning data. For example, to download the audio for all BioE lectures from `https://introbioe.stanford.edu/lectures-interviews`, run
+Populate the `/data` folder with your tuning data. For example, to download the audio for all BioE lectures from [BioE lectures-interviews](https://introbioe.stanford.edu/lectures-interviews), run
 
 ```shell
 % python3 download_audio.py 
@@ -55,15 +120,15 @@ Now, try it out....
 
 ## Methods
 
-Downloaded all of https://github.com/Stanford-BioE80/Stanford-BioE80.github.io
+Downloaded all of [Stanford-BioE80.github.io](https://github.com/Stanford-BioE80/Stanford-BioE80.github.io)
 
-Downloaded all of https://introbioe.stanford.edu
+Downloaded all of [introbioe.stanford.edu](https://introbioe.stanford.edu)
 
 Indexed all `.md`, `.txt`, and `.pdf` files
 
 ## Unedited Question/Answer Pairs
 
-These were not human-editied - this is raw output from the model.
+These were not human-edited - this is raw output from the model.
 
 *What is the goal of BioE80?*
 
@@ -107,4 +172,4 @@ Oligo assembly is a process of joining short synthetic DNA fragments together to
 
 ## Main impressions
 
-Training on the 781 RAW documents took 3 mins on my laptop. Some answers are great and some are _initially_ crazy/dumb (see e.g. "How can I synthesize DNA?[BAD ANSWER before Tuning]") and can be improved withing a few seconds by adding material relevant to the question (see e.g. "How can I synthesize DNA?[after Tuning]"). Tuning with relevant material immediately helps. The system does best when there is training material that is similar to the question/prompt. The system does best when trained with essays and question/answer pairs.
+Training on the ~1000 RAW documents took 3 mins on my laptop. Some answers are great and some are _initially_ crazy/dumb (see e.g. "How can I synthesize DNA?[BAD ANSWER before Tuning]") and can be improved withing a few seconds by adding material relevant to the question (see e.g. "How can I synthesize DNA?[after Tuning]"). Tuning with relevant material immediately helps. The system does best when there is training material that is similar to the question/prompt. The system does best when trained with essays and question/answer pairs.

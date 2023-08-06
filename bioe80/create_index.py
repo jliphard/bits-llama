@@ -20,4 +20,4 @@ index = VectorStoreIndex.from_documents(documents)
 print(f"Indexing completed. Writing index to file...")
 index.storage_context.persist()
 
-print("All done - you can now query a BioE80 fine-tuned ChatGPT")
+print("All done - you can now query a fine-tuned ChatGPT")
