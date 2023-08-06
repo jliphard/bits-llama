@@ -4,7 +4,7 @@ import os, argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--path', type=str, required=True)
 args = parser.parse_args()
-STORAGE_DIR = args.path + '/data/storage'
+STORAGE_DIR = args.path + '/storage'
 
 print(f'Using {STORAGE_DIR} as the path')
 
