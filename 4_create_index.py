@@ -23,6 +23,7 @@ print(f"Loaded {len(documents)} docs. Please be patient...")
 index = VectorStoreIndex.from_documents(documents)
 
 print(f"Indexing completed. Writing index to file...")
-index.storage_context.persist()
+STORAGE_DIR=args.path + '/storage'
+index.storage_context.persist(persist_dir=STORAGE_DIR)
 
 print("All done - you can now query a fine-tuned ChatGPT")
