@@ -7,9 +7,9 @@
   * [Conversation example - unedited/raw output](#conversation-example---unedited-raw-output)
   * [Main impressions](#main-impressions)
 
-# BITS, a digital TA
+# BITS: A rapidly re-tunable digital TA
 
-This is a digital TA built on OpenAI's ChatGPT-3.5, `llama_index`, and `langchain`. 
+BITS is a digital TA built on OpenAI's ChatGPT-3.5, `llama_index`, and `langchain`. 
 
 The central premise is that educators seek great learning tools for their students but that educational chatbots trained on a generic, fixed corpus miss the mark. Rather, many educators wish to take materials specific to _their_ course, and which their reflect their unique point of view, and use that information to fine-tune the responses for their students. Tuning is not just about creating course-specific digital TAs, but also being able to respond to student needs/questions by quickly adding responsive materials to the tuning set, enabling BITs to within minutes provide great answers to common questions.
 
