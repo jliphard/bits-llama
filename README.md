@@ -11,7 +11,7 @@
 
 BITS is a digital TA built on OpenAI's GPT-3.5, `llama_index`, and `langchain`. 
 
-The central premise is that educators seek learning tools for their students but that chatbots trained on a generic, fixed corpus leave much to be desired - see the example below. In consequence, educators needs a way to take materials specific to _their_ course and which reflect their unique point of view, and use that information to fine-tune the tools. Tuning is not just about creating course-specific digital TAs, but also being able to respond to newly apparent student needs/questions by adding materials to the tuning set. BITS can be re-tuned within a few minutes to provide betters answers to common questions.
+The central premise is that educators seek learning tools for their students but that chatbots trained on a generic, fixed corpus leave much to be desired - see the example below. In consequence, educators need a way to take materials specific to _their_ course and which reflect their unique point of view, and use that information to fine-tune the tools. Tuning is not just about creating course-specific digital TAs, but also being able to respond to newly apparent student needs/questions by adding materials to the tuning set. BITS can be re-tuned within a few minutes to provide betters answers to common questions.
 
 A desire for course-specific digital TAs is also shared by the students, since they generally care less about what Wikipedia says and more about what their instructors think (hopefully, at least).      
 
