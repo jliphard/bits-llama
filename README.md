@@ -30,7 +30,7 @@ the desired DNA sequence. Additionally, you can optimize synthetic chemistry
 for accuracy to ensure that the DNA sequence is correct.
 ```
 
-If you know anything about DNA, this is really funny but about as wrong as it could be. After tuning on Bioe80 course materials, 
+If you know anything about DNA, this is really funny but about as wrong as it could be. After tuning on Bioe80 course materials, we end up with a useful, clear, and entirely correct answer: 
 
 ```text
 INPUT: (Human) How can I synthesize DNA?
@@ -46,8 +46,6 @@ involves building the oligo chain on a solid support through cycles of chemical
 reactions. The dsDNA fragments are then assembled using polymerase cycling 
 assembly.
 ```
-
-we end up with a useful, clear, and entirely correct answer. 
 
 ## Technical Overview
 
