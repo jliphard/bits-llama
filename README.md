@@ -24,9 +24,10 @@ INPUT: (Human) How can I synthesize DNA?
 
 AgentExecutor> 
 
-To synthesize DNA, you can use a four-key keyboard to input raw chemicals that are not
-derived from existing DNA. You can then play with the chemicals to get the desired DNA sequence.
-Additionally, you can optimize synthetic chemistry for accuracy to ensure that the DNA sequence is correct.
+To synthesize DNA, you can use a four-key keyboard to input raw chemicals that 
+are not derived from existing DNA. You can then play with the chemicals to get 
+the desired DNA sequence. Additionally, you can optimize synthetic chemistry 
+for accuracy to ensure that the DNA sequence is correct.
 ```
 
 If you know anything about DNA, this is really funny but about as wrong as it could be. After tuning on Bioe80 course materials, 
@@ -36,7 +37,14 @@ INPUT: (Human) How can I synthesize DNA?
 
 AgentExecutor-Tuned> 
 
-DNA can be synthesized by first designing the sequence, then synthesizing oligonucleotides (oligos) from the sequence, and finally assembling the oligos into double-stranded DNA (dsDNA) fragments. This process is known as artificial DNA synthesis and is a fundamental tool of synthetic biology. The oligos are synthesized using a process called phosphoramidite-based oligo synthesis, which involves building the oligo chain on a solid support through cycles of chemical reactions. The dsDNA fragments are then assembled using polymerase cycling assembly.
+DNA can be synthesized by first designing the sequence, then synthesizing 
+oligonucleotides (oligos) from the sequence, and finally assembling the oligos 
+into double-stranded DNA (dsDNA) fragments. This process is known as artificial 
+DNA synthesis and is a fundamental tool of synthetic biology. The oligos are 
+synthesized using a process called phosphoramidite-based oligo synthesis, which 
+involves building the oligo chain on a solid support through cycles of chemical 
+reactions. The dsDNA fragments are then assembled using polymerase cycling 
+assembly.
 ```
 
 we end up with a useful, clear, and entirely correct answer. 
