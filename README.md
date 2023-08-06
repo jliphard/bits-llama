@@ -9,47 +9,29 @@
 
 # BITS: A rapidly re-tunable digital TA
 
-BITS is a digital TA built on OpenAI's ChatGPT-3.5, `llama_index`, and `langchain`. 
+BITS is a digital TA built on OpenAI's GPT-3.5, `llama_index`, and `langchain`. 
 
-The central premise is that educators seek great learning tools for their students but that educational chatbots trained on a generic, fixed corpus miss the mark. Rather, many educators wish to take materials specific to _their_ course, and which their reflect their unique point of view, and use that information to fine-tune the responses for their students. Tuning is not just about creating course-specific digital TAs, but also being able to respond to student needs/questions by quickly adding responsive materials to the tuning set, enabling BITs to within minutes provide great answers to common questions.
+The central premise is that educators seek learning tools for their students but that chatbots trained on a generic, fixed corpus leave much to be desired - see the example below. In consequence, educators needs a way to take materials specific to _their_ course and which reflect their unique point of view, and use that information to fine-tune the tools. Tuning is not just about creating course-specific digital TAs, but also being able to respond to newly apparent student needs/questions by adding materials to the tuning set. BITS can be re-tuned within a few minutes to provide betters answers to common questions.
 
 A desire for course-specific digital TAs is also shared by the students, since they generally care less about what Wikipedia says and more about what their instructors think (hopefully, at least).      
 
 ## What's the point of Tuning?
 
-Consider ChatGPT's (initial) answer to simple question:
+Consider GPT-3.5's (initial) answer to a simple question:
 
-```text
-INPUT: (Human) How can I synthesize DNA?
+*INPUT: (Human) How can I synthesize DNA?*
 
-AgentExecutor> 
+_AgentExecutor> To synthesize DNA, you can use a four-key keyboard to input raw chemicals that are not derived from existing DNA. You can then play with the chemicals to get the desired DNA sequence. Additionally, you can optimize synthetic chemistry for accuracy to ensure that the DNA sequence is correct._
 
-To synthesize DNA, you can use a four-key keyboard to input raw chemicals that 
-are not derived from existing DNA. You can then play with the chemicals to get 
-the desired DNA sequence. Additionally, you can optimize synthetic chemistry 
-for accuracy to ensure that the DNA sequence is correct.
-```
+If you know anything about DNA, this is really funny but about as wrong as it could be. However, after tuning on BioE80 course materials, we end up with a useful, clear, and entirely correct answer: 
 
-If you know anything about DNA, this is really funny but about as wrong as it could be. After tuning on Bioe80 course materials, we end up with a useful, clear, and entirely correct answer: 
+*INPUT: (Human) How can I synthesize DNA?*
 
-```text
-INPUT: (Human) How can I synthesize DNA?
-
-AgentExecutor-Tuned> 
-
-DNA can be synthesized by first designing the sequence, then synthesizing 
-oligonucleotides (oligos) from the sequence, and finally assembling the oligos 
-into double-stranded DNA (dsDNA) fragments. This process is known as artificial 
-DNA synthesis and is a fundamental tool of synthetic biology. The oligos are 
-synthesized using a process called phosphoramidite-based oligo synthesis, which 
-involves building the oligo chain on a solid support through cycles of chemical 
-reactions. The dsDNA fragments are then assembled using polymerase cycling 
-assembly.
-```
+_AgentExecutor-Tuned> DNA can be synthesized by first designing the sequence, then synthesizing oligonucleotides (oligos) from the sequence, and finally assembling the oligos into double-stranded DNA (dsDNA) fragments. This process is known as artificial DNA synthesis and is a fundamental tool of synthetic biology. The oligos are synthesized using a process called phosphoramidite-based oligo synthesis, which involves building the oligo chain on a solid support through cycles of chemical reactions. The dsDNA fragments are then assembled using polymerase cycling assembly._
 
 ## Technical Overview
 
-BITS uses [llama_index](https://github.com/jerryjliu/llama_index), a toolkit for augmenting LLMs with "private" data. Llama_index is used to structure your course data (e.g. lecture notes in `.txt` format to `indices`). The structured data can then be combined with an LLM input prompt, yielding knowledge-augmented outputs from generic LLMs such as GhatGPT-3.5.
+BITS uses [llama_index](https://github.com/jerryjliu/llama_index), a toolkit for augmenting LLMs with "private" data. Llama_index is used to structure your course data (e.g. lecture notes in `.txt` format to `indices`). The structured data can then be combined with an LLM input prompt, yielding knowledge-augmented outputs from generic LLMs such as GPT-3.5.
 
 The practical heart of the system is the `data` folder, which contains lecture notes, lecture transcriptions, papers, and other course materials. 
 
@@ -64,7 +46,7 @@ required_exts = [".md", ".pdf", ".txt"]
 reader = SimpleDirectoryReader(input_dir="./data", required_exts=required_exts, recursive=True)
 ```
 
-The `index` can then be used directly as an input to ChatGPT. `llama_index` will handle the details in the background:
+The `index` can then be used directly as an input to GPT. `llama_index` will handle the details in the background:
 
 ```python
 query_engine = index.as_query_engine()
@@ -72,12 +54,12 @@ response = query_engine.query("What's the best way to synthesize DNA?")
 print(response)
 ```
 
-To build `BITS`, the chatbot, we define a `LlamaIndex tool`:
+To build the `BITS` chatbot, we define a `LlamaIndex tool`:
 
 ```python
 tools = [
     Tool(
-        name="LlamaIndex",
+        name="BITS",
         func=lambda q: str(index.as_query_engine().query(q)),
         description="useful for when you want to answer questions about your class. The input to this tool should be a complete english sentence.",
         return_direct=True,
@@ -104,9 +86,9 @@ agent_executor = initialize_agent(
 This agent then responds to course-focused questions with tuned responses:
 
 ```shell
-[tool/start] [1:chain:AgentExecutor > 4:tool:LlamaIndex] Entering Tool run with input:
+[tool/start] [1:chain:AgentExecutor > 4:tool:BITS] Entering Tool run with input:
 "Please summarize the BioE80 course"
-[tool/end] [1:chain:AgentExecutor > 4:tool:LlamaIndex] [3.01s] Exiting Tool run with output:
+[tool/end] [1:chain:AgentExecutor > 4:tool:BITS] [3.01s] Exiting Tool run with output:
 "BioE80 is an Introduction to Bioengineering (Engineering Living Matter) course that aims to help students learn ways of thinking about engineering living matter, empower them to explore and do bioengineering starting from DNA, and become more capable of learning and explaining bioengineering to themselves and others. Additionally, the course seeks to enable students to devise and express their wishes for bioengineering as might be made true by or before 2030, and to develop practical plans for making their wishes real."
 ```
 
@@ -117,9 +99,7 @@ Install the following:
 ```shell
 % pip3 install llama_index
 % pip3 install torch transformers sentencepiece Pillow
-% pip3 install pypdf
-% pip3 install pytube
-% pip3 install pydub
+% pip3 install pypdf pytube pydub
 % brew install ffmpeg // assuming you are on Mac silicon, which everyone is...
 ```
 
@@ -165,11 +145,7 @@ Now, try it out....
 
 ## Methods
 
-Downloaded all of [Stanford-BioE80.github.io](https://github.com/Stanford-BioE80/Stanford-BioE80.github.io)
-
-Downloaded all of [introbioe.stanford.edu](https://introbioe.stanford.edu)
-
-Indexed all `.md`, `.txt`, and `.pdf` files
+Downloaded all of [Stanford-BioE80.github.io](https://github.com/Stanford-BioE80/Stanford-BioE80.github.io) and [introbioe.stanford.edu](https://introbioe.stanford.edu). Indexed all `.md`, `.txt`, and `.pdf` files.
 
 ## Unedited Question/Answer Pairs
 
