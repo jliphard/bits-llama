@@ -1,4 +1,4 @@
-streamlit
-openai
+# streamlit
+# openai
 langchain
-llama-index
+# llama-index

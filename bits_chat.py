@@ -1,6 +1,8 @@
 import os
-
 import streamlit as st
+import sys
+
+print(sys.path)
 
 from langchain.llms import OpenAI
 from langchain.agents import Tool
