@@ -1,9 +1,6 @@
-llama_index==0.7.19
-torch 
-transformers 
-sentencepiece 
+llama-index==0.7.19
 Pillow==9.5.0
-langchain
+langchain==0.0.252
 streamlit==1.25.0 
 watchdog==3.0.0
 numpy==1.25.2
