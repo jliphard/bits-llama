@@ -2,11 +2,8 @@ import os
 
 import streamlit as st
 
-import pandas as pd
-import numpy as np
-
-from langchain.agents import Tool
 from langchain.llms import OpenAI
+from langchain.agents import Tool
 from langchain.agents import AgentType, initialize_agent, load_tools
 from langchain.callbacks import StreamlitCallbackHandler
 from langchain.chains.conversation.memory import ConversationBufferMemory
