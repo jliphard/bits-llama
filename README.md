@@ -107,6 +107,8 @@ Install the following:
 % brew install ffmpeg
 ```
 
+(python3 -m pip install -r requirements.txt)
+
 Provide an OpenAI access token:
 
 ```shell
