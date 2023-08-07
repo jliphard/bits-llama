@@ -63,7 +63,7 @@ jupyterlab-pygments==0.2.2
 jupyterlab_server==2.24.0
 langchain==0.0.252
 langsmith==0.0.19
-llama-index==0.7.19
+llama_index==0.7.19
 lxml==4.9.3
 macholib @ file:///System/Volumes/Data/SWE/Apps/DT/BuildRoots/BuildRoot7/ActiveBuildRoot/Library/Caches/com.apple.xbs/Sources/python3/python3-133.100.1.1/macholib-1.15.2-py2.py3-none-any.whl
 markdown-it-py==3.0.0

@@ -105,7 +105,6 @@ Install the following:
 % pip3 install np pd # you proably have these anyway
 
 % brew install ffmpeg
-
 ```
 
 Provide an OpenAI access token:

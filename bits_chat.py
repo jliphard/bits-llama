@@ -5,13 +5,13 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-from llama_index import StorageContext, load_index_from_storage
-
 from langchain.agents import Tool
 from langchain.llms import OpenAI
 from langchain.agents import AgentType, initialize_agent, load_tools
 from langchain.callbacks import StreamlitCallbackHandler
 from langchain.chains.conversation.memory import ConversationBufferMemory
+
+from llama_index import StorageContext, load_index_from_storage
 
 def local_css(file_name):
     with open(file_name) as f:
