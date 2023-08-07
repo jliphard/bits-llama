@@ -1,4 +1,7 @@
+import os
+
 import streamlit as st
+
 import pandas as pd
 import numpy as np
 
@@ -9,9 +12,6 @@ from langchain.llms import OpenAI
 from langchain.agents import AgentType, initialize_agent, load_tools
 from langchain.callbacks import StreamlitCallbackHandler
 from langchain.chains.conversation.memory import ConversationBufferMemory
-
-import streamlit as st
-import os
 
 def local_css(file_name):
     with open(file_name) as f:
@@ -67,8 +67,6 @@ tools = [
     ),
 ]
 
-st.subheader('BITS:')
-
 memory = ConversationBufferMemory(memory_key="chat_history")
 
 #llm = ChatOpenAI(temperature=0, max_tokens=512, model_name="gpt-3.5-turbo") # gpt-4
@@ -76,9 +74,6 @@ llm = OpenAI(temperature=0.1, max_tokens=512, streaming=True)
 
 # agent = initialize_agent(tools, llm, agent=AgentType.CONVERSATIONAL_REACT_DESCRIPTION, memory=memory, verbose=True)
 agent = initialize_agent(tools, llm, agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, memory=memory, verbose=True)
-
-# selected = st.text_input("", "Ask BITS...")
-# button_clicked = st.button("OK")
 
 if prompt := st.chat_input("Ask BITS..."):
     st.chat_message("student").write(prompt)
