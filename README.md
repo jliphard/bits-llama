@@ -101,7 +101,11 @@ Install the following:
 % pip3 install llama_index
 % pip3 install torch transformers sentencepiece Pillow
 % pip3 install pypdf pytube pydub
+% pip3 install langchain streamlit watchdog
+% pip3 install np pd # you proably have these anyway
+
 % brew install ffmpeg
+
 ```
 
 Provide an OpenAI access token:
@@ -142,6 +146,19 @@ Now, try it out....
 ```shell
 % python3 5_query.py --path ./bioe80
 ```
+
+## Streamlit UI
+
+```shell
+streamlit run bits_chat.py
+```
+
+## Jupyter notebook (BITS.ipynb)
+
+```shell
+jupyter notebook
+```
+
 
 ## Methods
 
