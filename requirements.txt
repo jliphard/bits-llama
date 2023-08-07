@@ -1,4 +1,4 @@
-llama-index==0.7.19
-langchain==0.0.252
-openai==0.27.8
-openapi-schema-pydantic==1.2.4
+streamlit
+openai
+langchain
+llama-index
