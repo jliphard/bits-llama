@@ -1,5 +1,5 @@
 streamlit
 openai
 langchain
-urllib3==1.26.16
+urllib3==1.26.16 # this needs to be unser < otherwise llama_index complains
 llama_index
