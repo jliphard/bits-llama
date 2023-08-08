@@ -1,10 +1,30 @@
-body {
-    color: #fff;
-    background-color: #4F8BF9;
-}
-
+/*
+Basic chat input outer wrapper container formating
+Prevent chat input window from vanishing on phones
 .stChatFloatingInputContainer {
     position: absolute;
     top: 0px;
     left: 0px;
+    background-color: #f9e8eb;
 }
+
+Basic chat input outer wrapper container formating
+.stApp {
+    background-color: #f9e8eb;
+}
+
+Basic chat input container formating*
+.stChatInputContainer {
+    background-color: white;
+}
+
+@media only screen and (max-width: 999px) {
+    .stChatFloatingInputContainer {
+        width: auto;
+        height: auto;
+        padding: unset;
+        mergin: unset;
+        position: unset;
+    }
+}
+*/

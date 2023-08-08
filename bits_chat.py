@@ -5,7 +5,7 @@ from langchain.llms import OpenAI
 from langchain.agents import Tool
 from langchain.agents import AgentType, initialize_agent, load_tools
 from langchain.callbacks import StreamlitCallbackHandler
-from langchain.chains.conversation.memory import ConversationBufferMemory
+from langchain.memory import ConversationBufferMemory
 
 from llama_index import StorageContext, load_index_from_storage
 
@@ -36,31 +36,49 @@ index = load_index()
 data_load_state.text("Ready...")
 
 st.title('BITS-BioE80 ')
+
 st.write('Hello, I\'m BITS. I\'m still learning but I\'ve been trained on ~1000 source materials including all BioE80 lectures.')
 
 st.subheader('Example Prompts:')
+
 st.write("What does Drew mean by abstraction?")
-st.write("What are the steps to make a probiotic for an endangered frog species?")
+st.write("What steps are needed to make a probiotic for an endangered frog species?")
 
 input_container = st.container()
+data_container = st.container()
 
 # generate BITS from stored vector index
 tools = [
     Tool(
         name="BITS",
+        # critical part here where we query the index, and provide the response to the LLM
         func=lambda q: str(index.as_query_engine().query(q)),
         description="useful for when you want to answer questions about BioE80. The input to this tool should be a complete english sentence.",
         return_direct=True,
     ),
 ]
 
-memory = ConversationBufferMemory(memory_key="chat_history")
+#memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 
 #llm = ChatOpenAI(temperature=0, max_tokens=512, model_name="gpt-3.5-turbo") # gpt-4
 llm = OpenAI(temperature=0.1, max_tokens=512, streaming=True)
 
-# agent = initialize_agent(tools, llm, agent=AgentType.CONVERSATIONAL_REACT_DESCRIPTION, memory=memory, verbose=True)
-agent = initialize_agent(tools, llm, agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, memory=memory, verbose=True)
+# agent = initialize_agent(
+    # tools, 
+    # llm, 
+    # agent=AgentType.CONVERSATIONAL_REACT_DESCRIPTION, 
+    # memory=memory, 
+    # verbose=True
+    # )
+agent = initialize_agent(
+    tools, 
+    llm, 
+    agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, 
+    #agent=AgentType.CHAT_CONVERSATIONAL_REACT_DESCRIPTION, 
+    #memory=memory, 
+    verbose=True,
+    handle_parsing_errors=True,
+)
 
 if prompt := input_container.chat_input("Ask BITS..."):
     input_container.chat_message("student").write(prompt)
@@ -68,3 +86,5 @@ if prompt := input_container.chat_input("Ask BITS..."):
         st_callback = StreamlitCallbackHandler(input_container.container())
         response = agent.run(prompt, callbacks=[st_callback])
         input_container.write(response)
+        data_container.write(prompt)
+        data_container.write("response:" + response)
