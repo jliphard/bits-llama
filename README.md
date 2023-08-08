@@ -7,17 +7,18 @@
   * [Conversation example - unedited/raw output](#conversation-example---unedited-raw-output)
   * [Main impressions](#main-impressions)
 
-# BITS: A rapidly re-tunable digital TA
+
+# BITS: A rapidly tunable digital TA using Retrieval augmented generation (RAG)
 
 BITS is a digital TA built on OpenAI's GPT-3.5, `llama_index`, and `langchain`. 
 
-The central premise is that educators seek learning tools for their students but that chatbots trained on a generic, fixed corpus leave much to be desired - see the example below. In consequence, educators need a way to take materials specific to _their_ course, which reflect their unique point of view, and use that information to fine-tune the models. 
+The central premise that chatbots trained on a generic, fixed corpus leave much to be desired - see the problematic example below. Answers are either vague/general or the LLMs can hallucinate. In consequence, educators need a way to take materials specific to _their_ course, which reflect their unique point of view, and use that information to improve the answers from the models. 
 
-Tuning is not just about creating course-specific digital TAs, but also being able to respond to newly apparent student needs/questions by adding materials to the tuning set. BITS can be re-tuned within a few minutes to provide betters answers to common questions.
+Augmentation/tuning is not just about creating course-specific digital TAs, but also being able to respond to newly apparent student needs by adding additional materials to the LLM's context. BITS can be improved within a few minutes to provide better answers to common questions.
 
 A desire for course-specific digital TAs is also shared by the students, since they generally care less about what Wikipedia says and more about what their instructors think (hopefully, at least).      
 
-## What's the point of Tuning?
+## What's the point of Augmentation?
 
 Consider GPT-3.5's (initial) answer to a simple question:
 
@@ -33,65 +34,43 @@ _AgentExecutor-Tuned> DNA can be synthesized by first designing the sequence, th
 
 ## Technical Overview
 
-BITS uses [llama_index](https://github.com/jerryjliu/llama_index), a toolkit for augmenting LLMs with "private" data. Llama_index is used to structure your course data (e.g. lecture notes in `.txt` format to `indices`). The structured data can then be combined with an LLM input prompt, yielding knowledge-augmented outputs from generic LLMs such as GPT-3.5.
+BITS uses [llama_index](https://github.com/jerryjliu/llama_index), a toolkit for augmenting LLMs with "private" data. Llama_index uses Retrieval augmented generation (RAG); in this approach, data are indexed to generate a *knowledge base*. When the user generates a query, RAG pipeline retrieves the most relevant context for that query from knowledge base, and passes that context to the LLM (along with the query) to synthesize a response. The LLM has up-to-date knowledge that is generally not in its original training data and is less likely to hallucinate.
 
-The practical heart of the system is the `data` folder, which contains lecture notes, lecture transcriptions, papers, and other course materials. 
-
-This repo contains as an example the course materials for BioE80, Stanford's flagship "Introduction to Bioengineering" class, but nothing in the code is specific to BioE80. 
-
-The repo also contains various helper functions, such as code to download lecture videos from YouTube and then transcribe them with OpenAI's `Whisper`. 
-
-The tuning data are used to create an `index`:
+The practical heart of the system is the `data` folder, which contains lecture notes, lecture transcriptions, papers, and other course materials. `llama_index` is used to create an index (the knowledge base) from your course data (e.g. lecture notes in `.txt` format), 
 
 ```python
 required_exts = [".md", ".pdf", ".txt"]
 reader = SimpleDirectoryReader(input_dir="./data", required_exts=required_exts, recursive=True)
+documents = reader.load_data()
+index = VectorStoreIndex.from_documents(documents)
 ```
 
-The `index` can then be used directly as an input to GPT. `llama_index` will handle the details in the background:
+When interacting with ChatGPT, the custom tool can be provided to the LLM, yielding course specific knowledge-augmented outputs:
 
 ```python
-query_engine = index.as_query_engine()
-response = query_engine.query("What's the best way to synthesize DNA?")
-print(response)
-```
-
-To build the `BITS` chatbot, we define a `LlamaIndex tool`:
-
-```python
-tools = [
-    Tool(
+tool = Tool(
         name="BITS",
         func=lambda q: str(index.as_query_engine().query(q)),
-        description="useful for when you want to answer questions about your class. The input to this tool should be a complete english sentence.",
-        return_direct=True),
-]
+        description="useful for when you want to answer questions about BioE80. The input to this tool should be a complete english sentence.",
+        return_direct=True,
+    )
+
+agent = initialize_agent(tools, llm, agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION, memory=memory, verbose=True)
 ```
 
-and use the tool and an LLM to instantiate a `langchain` agent:
+The agent can then be queried: 
 
 ```python
-from langchain.chat_models import ChatOpenAI
-from langchain.agents import initialize_agent
-
-memory = ConversationBufferMemory(memory_key="chat_history")
-llm = ChatOpenAI(temperature=0, max_tokens=512, model_name="gpt-3.5-turbo")
-agent_executor = initialize_agent(
-	tools, 
-	llm, 
-	agent="conversational-react-description", 
-	memory=memory, 
-	verbose=True)
+agent.run("Summarize the BioE80 course") #simplfied pseudocode
 ```
-
-This agent then responds to course-focused questions with tuned responses:
-
 
 *[tool/start] [1:chain:AgentExecutor > 4:tool:BITS] Entering Tool run with input:
 "Please summarize the BioE80 course"*
 
 _[tool/end] [1:chain:AgentExecutor > 4:tool:BITS] [3.01s] Exiting Tool run with output:
 "BioE80 is an Introduction to Bioengineering (Engineering Living Matter) course that aims to help students learn ways of thinking about engineering living matter, empower them to explore and do bioengineering starting from DNA, and become more capable of learning and explaining bioengineering to themselves and others. Additionally, the course seeks to enable students to devise and express their wishes for bioengineering as might be made true by or before 2030, and to develop practical plans for making their wishes real."_
+
+This repo contains as an example the course materials for BioE80, Stanford's flagship "Introduction to Bioengineering" class, but nothing in the code is specific to BioE80. The repo also contains various helper functions, such as code to download lecture videos from YouTube and then transcribe them with OpenAI's `Whisper`. 
 
 ## Usage
 
@@ -102,12 +81,10 @@ Install the following:
 % pip3 install torch transformers sentencepiece Pillow
 % pip3 install pypdf pytube pydub
 % pip3 install langchain streamlit watchdog
-% pip3 install np pd # you proably have these anyway
+% pip3 install np pd # you probably have these anyway
 
 % brew install ffmpeg
 ```
-
-(python3 -m pip install -r requirements.txt)
 
 Provide an OpenAI access token:
 
@@ -115,7 +92,7 @@ Provide an OpenAI access token:
 % export OPENAI_API_KEY=sk-.....
 ```
 
-Populate the `PROJECT/data` folder with your tuning data. For example, to download the audio for all BioE lectures from [BioE lectures-interviews](https://introbioe.stanford.edu/lectures-interviews), run
+Populate the `PROJECT/data` folder with your data. For example, to download the audio for all BioE lectures from [BioE lectures-interviews](https://introbioe.stanford.edu/lectures-interviews), run
 
 ```shell
 % python3 1_download_audio.py --path ./bioe80
@@ -133,7 +110,7 @@ Then, transcribe the audio:
 % python3 3_transcribe.py --path ./bioe80
 ```
 
-Finally, run the indexer, if you have added new tuning data or if this is the first time you are running the system:
+Finally, run the indexer, if you have added new data or if this is the first time you are running the system:
 
 ```shell
 % python3 4_create_index.py --path ./bioe80
@@ -150,11 +127,15 @@ Now, try it out....
 
 ## Streamlit UI
 
+Streamlit handle the UI:
+
 ```shell
 streamlit run bits_chat.py
 ```
 
 ## Jupyter notebook (BITS.ipynb)
+
+Jupyter can be used to quickly try out 
 
 ```shell
 jupyter notebook
