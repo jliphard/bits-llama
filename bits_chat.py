@@ -33,10 +33,10 @@ def load_index():
 
 data_load_state = st.text('Loading BITS index...')
 index = load_index()
-data_load_state.text("Loaded index! (using st.cache_index)")
+data_load_state.text("Ready...")
 
 st.title('BITS-BioE80 ')
-st.write('Hello I\'m BITS-BioE80. I\'m still learning but I\'ve been trained on ~1000 source materials including all BioE80 lectures.')
+st.write('Hello, I\'m BITS. I\'m still learning but I\'ve been trained on ~1000 source materials including all BioE80 lectures.')
 
 st.subheader('Example Prompts:')
 st.write("What does Drew mean by abstraction?")
